@@ -1,87 +1,75 @@
-<!DOCTYPE html>
-<html>
+<!-- $title Dashboard -->
+<!-- $group-1-name Email -->
+<!-- $group-2-name Social -->
+<!-- $group-3-name Email -->
+<!-- $group-4-name Email -->
+<!-- $group-5-name Email -->
+<!-- $group-6-name Email -->
+<!-- $group-7-name Email -->
+<!-- $group-8-name Email -->
+<!-- $group-9-name Email -->
+<!-- $group-10-name Email -->
+<!-- $group-11-name Email -->
+<!-- $group-12-name Email -->
+<!-- $group-13-name Email -->
+<!-- $group-14-name Email -->
+<!-- $group-15-name Email -->
+<!-- $group-16-name Email -->
+<!-- $group-17-name Email -->
+<!-- $group-18-name Email -->
+<!-- $group-19-name Email -->
+<!-- $group-20-name Email -->
+
+<!doctype html>
+<html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Dashboard</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title><!-- $title | Dashboard --></title>
 		
-		<style>
-			body		{ background: #fff; font-family: helvetica; }
-			nav			{ background: #333; width: 20%; height: auto; position: fixed; top: 0; left: 0; }
-			nav a		{ color: #fff; }
-			.page		{ background: #fff; width: 70%; position: relative; left: 30%; }
-
-			
-			@media screen and (max-width: 480px){
-				#grid	{ -webkit-column-count: 1; -webkit-column-gap: 10px; width: 100%; }
-			}
-			
-			@media screen and (min-width: 481px) and (max-width: 768px) {
-				#grid	{ -webkit-column-count: 2; -webkit-column-gap: 10px; width: 100%; }
-			}
-			@media screen and (min-width: 769px) {
-				#grid	{ -webkit-column-count: 3; -webkit-column-gap: 10px; width: 100%; }
-			}
-			
-			@media screen and (min-width: 1024px) {
-				#grid	{ -webkit-column-count: 4; -webkit-column-gap: 10px; width: 100%; }
-			}
-			
-			.bloc			{ display: inline-block; width: 100%; }
-			
-			.show_hide		{ display: none; }
-			
-			
-		</style>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.js" type="text/javascript"></script>
+		<!-- @stylesheet normalize -->
+		<!-- @stylesheet dashboard -->
+		
+		<!-- @javascript jquery-1.10.2.min -->
 		<!-- @javascript show -->
-		
-		<!-- @reload -->
 	</head>
 	<body>
-		<nav>
-			<ul>
-				<li><a class="all" href="#">All</a></li>
-				<li><a id="email" class="links" href="#">Email</a></li>
-				<li><a id="social" class="links" href="#">Social</a></li>
-				<li><a id="portfolio" class="links" href="#">Portfolio</a></li>
-			</ul>
-		</nav>
-		<div class="page">
-			<div id="grid">
-				<div class="bloc" id="bloc-email">
-					<h4>Email</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
+		<div id="layout">
+			<!-- Menu toggle -->
+			<a href="#menu" id="menuLink" class="menu-link"><span></span></a>
+			<nav id="menu">
+				<header>
+					<h1><!-- $title | Dashboard --></h1>
+				</header>
+				<ul>
+					<li><a class="all" href="#">All</a></li>
+					<li><a class="group-link" id="one" href="#" >Email</a></li>
+					<li><a class="group-link" id="two" href="#" >Email</a></li>
+					<li><a class="group-link" id="three" href="#" >Email</a></li>
+				</ul>
+			</nav>
+			<main id="main">
+				<div id="grid" class="content">
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
+					<!-- @include _group-one -->
 				</div>
-				<div class="bloc" id="bloc-social">
-					<h4>Social</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-portfolio">
-					<h4>Portfolio</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-machin">
-					<h4>Machin</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-truc">
-					<h4>Truc</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-hosting">
-					<h4>Web hosting</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-writing">
-					<h4>Writing</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-				<div class="bloc" id="bloc-dev">
-					<h4>Dev</h4>
-					<img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" /><img src="<!-- @path button -->" />
-				</div>
-			</div>
+			</main>
 		</div>
+		<!-- @javascript ui -->
 	</body>
 </html>
