@@ -1,16 +1,16 @@
 /* pure-layout-side-menu, see vendor folder for more info */
 /* Add transition to containers so they can push in and out. */
 #layout,
-#menu,
+.menu,
 .menu-link							{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
 #layout								{ position: relative; padding-left: 0; }
 #layout.active						{ position: relative; left: $menu-size; }
-#layout.active #menu				{ left: $menu-size; width: $menu-size; }
+#layout.active .menu				{ left: $menu-size; width: $menu-size; }
 #layout.active .menu-link			{ left: $menu-size; }
 
 .content							{ margin: 0 auto; padding: 0 2em; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-#menu								{ margin-left: -$menu-size; width: $menu-size; position: fixed; top: 0; left: 0; bottom: 0; z-index: 1000; background: $menu-color; overflow-y: auto; -webkit-overflow-scrolling: touch; }
+.menu								{ margin-left: -$menu-size; width: $menu-size; position: fixed; top: 0; left: 0; bottom: 0; z-index: 1000; background: $menu-color; overflow-y: auto; -webkit-overflow-scrolling: touch; }
 
 /* -- Dynamic Button For Responsive Menu */
 .menu-link							{ position: fixed; display: block; top: 0; left: 0; background: darken( $color-highlight, 20% ); font-size: .5rem; z-index: 10; width: 1.5rem; height: auto; padding: 1.1875rem .5rem; }
@@ -29,7 +29,7 @@
 	.header,
 	.content						{ padding-left: 2.5rem; padding-right: 2.5rem; }
 	#layout							{ padding-left: $menu-size; left: 0; }
-	#menu							{ left: $menu-size; }
+	.menu							{ left: $menu-size; }
 	.menu-link						{ position: fixed; left: $menu-size; display: none; }
 	#layout.active .menu-link		{ left: $menu-size; }
 }
