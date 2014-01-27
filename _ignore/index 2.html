@@ -1,12 +1,11 @@
-<!-- $title Dashboard -->
-<!-- $section-1-name Email -->
+<!-- @include _user-info -->
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title><!-- $title | Dashboard --></title>
+		<title><!-- $title --></title>
 		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		
@@ -14,34 +13,38 @@
 		<!-- @stylesheet dashboard -->
 		
 		<!-- @javascript jquery-1.10.2.min -->
-		<style>
-		</style>
 		<!-- @reload -->
 	</head>
-	<body class="home">
-		<div class="layout">
-			<nav class="menu">
+	<body>
+		<div id="layout">
+			<!-- @include _icon -->
+			<a href="#menu" id="menuLink"><svg class="menu-icons" id="icon-menu" viewBox="0 0 48 48"><use xlink:href="#icon-menu"></svg></a>
+			<nav id="menu">
 				<ul>
-					<li><a href="#">All</a></li>
-					<li><a href="#" >Email</a></li>
-					<li><a href="#" >Support</a></li>
-					<li><a href="#" >Tralala</a></li>
+					<!-- @include _menu -->
 				</ul>
 			</nav>
-			<main class="main">
-				<header>
-					<a href="" class="menu-link">Menu</a>
-					<h1>Dashboard</h1>
+		
+			<main id="main">
+				<header id="header">
+					<h1 id="logo"><!-- $title --></h1>
 				</header>
 				<div class="content">
 					<!-- @include _section-1 -->
-					<!-- @include _section-1 -->
-					<!-- @include _section-1 -->
-					<!-- @include _section-1 -->
-					<!-- @include _section-1 -->
+					<!-- @include _section-2 -->
+					<!-- @include _section-3 -->
+					<!-- @include _section-4 -->
+					<!-- @include _section-5 -->
+					<!-- @include _section-6 -->
+					<!-- @include _section-7 -->
+					<!-- @include _section-8 -->
+					<!-- @include _section-9 -->
+					<!-- @include _section-10 -->
+					<!-- @include _section-11 -->
+					<!-- @include _section-12 -->
 				</div>
 			</main>
 		</div>
-		<!-- @javascript ui -->
+		<!-- @javascript ui.js -->
 	</body>
 </html>

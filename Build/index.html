@@ -7,10 +7,10 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
 		
-		<link rel='stylesheet' href='vendors/normalize/normalize.css'>
+		<link rel='stylesheet' href='stylesheet/normalize.css'>
 		<link rel='stylesheet' href='stylesheet/dashboard.css'>
 		
-		<script src='vendors/jquery/jquery-1.10.2.min.js'></script>
+		<script src='javascripts/jquery-1.10.2.min.js'></script>
 		
         <!-- Hammer reload -->
           <script>
@@ -36,7 +36,7 @@
       
 	</head>
 	<body>
-		<div id="layout">
+		<div>
 			<div class="icons">
 	<!-- Menu -->
 	<svg viewBox="0 0 48 48">
@@ -178,609 +178,595 @@
 	</svg>
 </div>
 
-			<a href="#menu" id="menuLink"><svg class="menu-icons" id="icon-menu" viewBox="0 0 48 48"><use xlink:href="#icon-menu"></svg></a>
-			<nav id="menu">
-				<ul>
-					<li><a href="/"><svg class="menu-icons" id="icon-all" viewBox="0 0 48 48"><use xlink:href="#icon-all"></svg>All</a></li>
-<li class="section-1"><a href="/pages/page-1.html"><svg class="menu-icons" id="icon-dev" viewBox="0 0 48 48"><use xlink:href="#icon-dev"></svg>Dev</a></li>
-<li class="section-2"><a href="/pages/page-2.html"><svg class="menu-icons" id="icon-tools" viewBox="0 0 48 48"><use xlink:href="#icon-tools"></svg>Tools</a></li>
-<li class="section-3"><a href="/pages/page-3.html"><svg class="menu-icons" id="icon-portfolio" viewBox="0 0 48 48"><use xlink:href="#icon-portfolio"></svg>Portfolio</a></li>
-<li class="section-4"><a href="/pages/page-4.html"><svg class="menu-icons" id="icon-writing" viewBox="0 0 48 48"><use xlink:href="#icon-writing"></svg>Writing</a></li>
-<li class="section-5"><a href="/pages/page-5.html"><svg class="menu-icons" id="icon-photo" viewBox="0 0 48 48"><use xlink:href="#icon-photo"></svg>Photo</a></li>
-<li class="section-6"><a href="/pages/page-6.html"><svg class="menu-icons" id="icon-personal" viewBox="0 0 48 48"><use xlink:href="#icon-personal"></svg>Personal</a></li>
-<li class="section-7"><a href="/pages/page-7.html"><svg class="menu-icons" id="icon-resume" viewBox="0 0 48 48"><use xlink:href="#icon-resume"></svg>Resume</a></li>
-<li class="section-8"><a href="/pages/page-8.html"><svg class="menu-icons" id="icon-email" viewBox="0 0 48 48"><use xlink:href="#icon-email"></svg>Email</a></li>
-<li class="section-9"><a href="/pages/page-9.html"><svg class="menu-icons" id="icon-social" viewBox="0 0 48 48"><use xlink:href="#icon-social"></svg>Social</a></li>
-<li class="section-10"><a href="/pages/page-10.html"><svg class="menu-icons" id="icon-server" viewBox="0 0 48 48"><use xlink:href="#icon-server"></svg>Server</a></li>
-<li class="section-11"><a href="/pages/page-11.html"><svg class="menu-icons" id="icon-other" viewBox="0 0 48 48"><use xlink:href="#icon-other"></svg>Other</a></li>
-<li class="section-12"><a href="/pages/page-12.html"><svg class="menu-icons" id="icon-extra" viewBox="0 0 48 48"><use xlink:href="#icon-extra"></svg>Extra</a></li>
-				</ul>
-			</nav>
-		
-			<main id="main">
-				<header id="header">
-					<h1 id="logo">Dashboard</h1>
-				</header>
+			<header id="top">
 				<div class="content">
-					<section class="section-1">
-	<h2>Dev</h2>
+					<h1 id="logo">Dashboard</h1>
+					<nav>
+						<ul>
+							<li class="section-1"><a href="#section-1"><svg class="menu-icons" id="icon-dev" viewBox="0 0 48 48"><use xlink:href="#icon-dev"></svg>Dev</a></li>
+<li class="section-2"><a href="#section-2"><svg class="menu-icons" id="icon-tools" viewBox="0 0 48 48"><use xlink:href="#icon-tools"></svg>Tools</a></li>
+<li class="section-3"><a href="#section-3"><svg class="menu-icons" id="icon-writing" viewBox="0 0 48 48"><use xlink:href="#icon-writing"></svg>Writing</a></li>
+<li class="section-4"><a href="#section-4"><svg class="menu-icons" id="icon-portfolio" viewBox="0 0 48 48"><use xlink:href="#icon-portfolio"></svg>Portfolio</a></li>
+<li class="section-5"><a href="#section-5"><svg class="menu-icons" id="icon-photo" viewBox="0 0 48 48"><use xlink:href="#icon-photo"></svg>Photo</a></li>
+<li class="section-6"><a href="#section-6"><svg class="menu-icons" id="icon-personal" viewBox="0 0 48 48"><use xlink:href="#icon-personal"></svg>Personal</a></li>
+<li class="section-7"><a href="#section-7"><svg class="menu-icons" id="icon-resume" viewBox="0 0 48 48"><use xlink:href="#icon-resume"></svg>Resume</a></li>
+<li class="section-8"><a href="#section-8"><svg class="menu-icons" id="icon-email" viewBox="0 0 48 48"><use xlink:href="#icon-email"></svg>Email</a></li>
+<li class="section-9"><a href="#section-9"><svg class="menu-icons" id="icon-social" viewBox="0 0 48 48"><use xlink:href="#icon-social"></svg>Social</a></li>
+<li class="section-10"><a href="#section-10"><svg class="menu-icons" id="icon-server" viewBox="0 0 48 48"><use xlink:href="#icon-server"></svg>Server</a></li>
+<li class="section-11"><a href="#section-11"><svg class="menu-icons" id="icon-other" viewBox="0 0 48 48"><use xlink:href="#icon-other"></svg>Other</a></li>
+<li class="section-12"><a href="#section-12"><svg class="menu-icons" id="icon-extra" viewBox="0 0 48 48"><use xlink:href="#icon-extra"></svg>Extra</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+			<main>
+				<div class="content">
+					<section class="section-1" id="section-1" >
+	<h2>Dev</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-2">
-	<h2>Tools</h2>
+					<section class="section-2" id="section-2">
+	<h2>Tools</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-3">
-	<h2>Portfolio</h2>
+					<section class="section-3" id="section-3">
+	<h2>Writing</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-4">
-	<h2>Writing</h2>
+					<section class="section-4" id="section-4">
+	<h2>Portfolio</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://be.net/YourUsername" class="button button-important">Behance<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://dribbble.com/YourUsername" class="button button-important">Dribbble<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+
+
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-
-<!-- Link 5 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-
-<!-- Link 6 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-
-
-
-<!-- Link 7 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-
-<!-- Link 8 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-5">
-	<h2>Photo</h2>
+					<section class="section-5" id="section-5">
+	<h2>Photo</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-6">
-	<h2>Personal</h2>
+					<section class="section-6" id="section-6">
+	<h2>Personal</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-7">
-	<h2>Resume</h2>
+					<section class="section-7" id="section-7">
+	<h2>Resume</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-8">
-	<h2>Email</h2>
+					<section class="section-8" id="section-8">
+	<h2>Email</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-9">
-	<h2>Social</h2>
+					<section class="section-9" id="section-9">
+	<h2>Social</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="https://twitter.com/YourUsername" class="button button-important">Twitter<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
-
-
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://alpha.app.net/YourUsername" class="button button-important">Alpha<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-10">
-	<h2>Server</h2>
+					<section class="section-10" id="section-10">
+	<h2>Server</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-11">
-	<h2>Other</h2>
+					<section class="section-11" id="section-11">
+	<h2>Other</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
-					<section class="section-12">
-	<h2>Extra</h2>
+					<section class="section-12" id="section-12">
+	<h2>Extra</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
 		<!-- Link 1 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 2 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 3 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 4 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 5 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 6 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 
 
 <!-- Link 7 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 
 <!-- Link 8 -->
 
 
-<a href="http://websiteurlgoeshere.com" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://#" class="button button-normal">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 		
 	</div>
 </section>
 				</div>
 			</main>
 		</div>
-		<script src='javascripts/ui.js'></script>
+		<script>
+	$(function() {
+		$('a[href*=#]:not([href=#])').click(function() {
+			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+					$('html,body').animate({
+						scrollTop: target.offset().top
+					}, 500);
+				return false;
+				}
+			}
+		});
+	});
+</script>
 	</body>
 </html>

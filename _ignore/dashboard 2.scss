@@ -1,5 +1,7 @@
 /* Dashboard by Stephane Curzi */
 /* Copyright 2014 © stephanecurzi.me */
+/* pure-layout-side-menu, see vendors folder for more info */
+
 
 /* Import */
 @import '_variables';
@@ -7,32 +9,44 @@
 /* Base type */
 body				{ font-family: HelveticaNeue-Light, Helvetica, sans-serif; background: $background; }
 h1, h2, h3, h4		{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: normal; }
-h1, h2				{ margin-top: 0; }
+h1, h2				{ margin-top: 0; /*color: $color-highlight;*/ }
 
-/* Header */
-header							{ background: $menu-color; margin: 0 auto; box-sizing: border-box; width: 100%; }
-header h1						{ background: $color-highlight; color: #fff; font-size: 1.125rem; line-height: 2.25rem; text-align: center; width: auto; margin: 0; padding: 0 1.125rem; display: block; box-sizing: border-box; float: left; }
-
+/* Base layout style */
+/*#layout,
+#menu,
+#menuLink,
+#header							{ -webkit-transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -ms-transition: all 0.3s ease-out; -o-transition: all 0.3s ease-out; transition: all 0.3s ease-out; }
+#layout							{ position: relative; padding-left: 0; }
+#layout.active					{ position: relative; left: $menu-width-mobile; }
+#layout.active #menu			{ left: $menu-width-mobile; width: $menu-width-mobile; }
+#layout.active #menuLink		{ left: $menu-width-mobile; }
+#layout.active #header			{ left: $menu-width-mobile; position: static; }*/
 
 /* Main menu */
-nav								{ margin: 0; width: 100%; padding: 1rem 0; -moz-column-count: 2; -moz-column-gap: 0; -webkit-column-count: 2; -webkit-column-gap: 0; column-count: 2; column-gap: 0; }
-nav ul							{ margin: 0; padding: 0; }
-nav li							{ list-style-type: none; width: 100%; margin-bottom: 1px; display: inline-block; }
+#menu							{ /*margin-left: -$menu-width-mobile; width: $menu-width-mobile;*/ /*position: fixed; top: 0; left: 0; bottom: 0; z-index: 1000; */ background: $menu-color; /*overflow-y: auto;*/ -webkit-overflow-scrolling: touch; }
 
-nav a							{ color: $menu-link-color; line-height: 3rem; /*padding: 0 1.5rem;*/ text-decoration: none; display: block; }
-nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; width: 1.75rem; height: 1.75rem; stroke: $menu-link-color; margin-top: .625rem; margin-right: .5rem; float: left; }
+nav ul							{ margin: 0; padding: 0; padding: .625rem 0; }
+nav li							{ list-style-type: none; margin-bottom: 1px; display: inline-block; }
+nav a							{ color: $menu-link-color; line-height: 3rem; padding: 0 1.5rem; text-decoration: none; display: inline-block; }
+nav a:hover,
+nav a:active					{ background: $menu-link-hover; color: #fff; }
+
+nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; width: 2.25rem; height: 2.25rem; stroke: $menu-link-color; margin-top: .375rem; margin-right: 1rem; float: left; }
+nav a:hover .menu-icons			{ stroke: #fff; }
+
+/* Responsive Menu button */
+#menuLink						{ position: fixed; display: none; top: 0; left: 0; margin-left: 1.5rem; width: 2.25rem; background: $color-highlight; height: 2.25rem; z-index: 500; }
+#menuLink:hover,
+#menuLink:focus					{ }
+#icon-menu						{ width: 2.25rem; height: 2.25rem; fill: #fff; stroke: none; }
 
 /* Main content area */
-main							{ padding-top: 1.5rem; }
-.content						{ margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box; max-width: 100rem; }
-section							{ margin-bottom: 2rem; position: relative; }
+.content						{ margin: 0 auto; padding: 1.5rem; padding-top: 4.5rem; box-sizing: border-box; max-width: 100rem; }
+section							{ margin-bottom: 2rem; }
+
 section h2						{ border-bottom: dotted .0625rem #333; padding-bottom: .5rem; }
-section .top					{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: normal; text-decoration: none; padding: .125rem .25rem; position: absolute; top: 0; right: 0; background: $button-normal-color; color: $button-normal-link; }
-
-.grid							{ -moz-column-count: 1; -moz-column-gap: $column-gap-small; -webkit-column-count: 1; -webkit-column-gap: $column-gap-small; column-count: 1; column-gap: $column-gap-small; width: 100%; }  
-
-a.top:hover,
-a.top:active					{ background: $button-normal-color; color: $button-normal-link; }
+header							{ background: rgba(255, 255, 255, 0.85); margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box; height: 2.25rem; width: 100%; max-width: 100rem; /*position: fixed; top: 0; left: 0; z-index: 100;*/ }
+header h1						{ background: $color-highlight; color: #fff; font-size: 1.125rem; line-height: 2.25rem; text-align: center; width: auto; margin: 0; padding: 0 1.125rem; display: block; box-sizing: border-box; float: right; }
 
 .icons							{ width: 0; height: 0; display: none; }
 
@@ -52,8 +66,7 @@ a.button-normal #icon-arrow		{ stroke: rgba($button-normal-link, .2); }
 
 /* Colors */
 /* Section-1 */
-nav .section-1 a:hover					{ color: $section-1-color; }
-nav .section-1 a:hover .menu-icons		{ stroke: $section-1-color; }
+nav .section-1 a:hover					{ background: $section-1-color; }
 .section-1 a.button-important			{ background: $section-1-color; }
 .section-1 a.button-important:hover,
 .section-1 a.button-important:active	{ background: darken($section-1-color, 10%); }
@@ -65,8 +78,7 @@ nav .section-1 a:hover .menu-icons		{ stroke: $section-1-color; }
 */
 
 /* Section-2 */
-nav .section-2 a:hover					{ color: $section-2-color; }	
-nav .section-2 a:hover .menu-icons		{ stroke: $section-2-color; }
+nav .section-2 a:hover					{ background: $section-2-color; }
 .section-2 a.button-important			{ background: $section-2-color; }
 .section-2 a.button-important:hover,
 .section-2 a.button-important:active	{ background: darken($section-2-color, 10%); }
@@ -78,8 +90,7 @@ nav .section-2 a:hover .menu-icons		{ stroke: $section-2-color; }
 */
 
 /* Section-3 */
-nav .section-3 a:hover					{ color: $section-3-color; }
-nav .section-3 a:hover .menu-icons		{ stroke: $section-3-color; }
+nav .section-3 a:hover					{ background: $section-3-color; }
 .section-3 a.button-important			{ background: $section-3-color; }
 .section-3 a.button-important:hover,
 .section-3 a.button-important:active	{ background: darken($section-3-color, 10%); }
@@ -91,8 +102,7 @@ nav .section-3 a:hover .menu-icons		{ stroke: $section-3-color; }
 */
 
 /* Section-4 */
-nav .section-4 a:hover					{ color: $section-4-color; }
-nav .section-4 a:hover .menu-icons		{ stroke: $section-4-color; }
+nav .section-4 a:hover					{ background: $section-4-color; }
 .section-4 a.button-important			{ background: $section-4-color; }
 .section-4 a.button-important:hover,
 .section-4 a.button-important:active	{ background: darken($section-4-color, 10%); }
@@ -104,8 +114,7 @@ nav .section-4 a:hover .menu-icons		{ stroke: $section-4-color; }
 */
 
 /* Section-5 */
-nav .section-5 a:hover					{ color: $section-5-color; }
-nav .section-5 a:hover .menu-icons		{ stroke: $section-5-color; }
+nav .section-5 a:hover					{ background: $section-5-color; }
 .section-5 a.button-important			{ background: $section-5-color; }
 .section-5 a.button-important:hover,
 .section-5 a.button-important:active	{ background: darken($section-5-color, 10%); }
@@ -117,8 +126,7 @@ nav .section-5 a:hover .menu-icons		{ stroke: $section-5-color; }
 */
 
 /* Section-6 */
-nav .section-6 a:hover					{ color: $section-6-color; }
-nav .section-6 a:hover .menu-icons		{ stroke: $section-6-color; }
+nav .section-6 a:hover					{ background: $section-6-color; }
 .section-6 a.button-important			{ background: $section-6-color; }
 .section-6 a.button-important:hover,
 .section-6 a.button-important:active	{ background: darken($section-6-color, 10%); }
@@ -130,8 +138,7 @@ nav .section-6 a:hover .menu-icons		{ stroke: $section-6-color; }
 */
 
 /* Section-7 */
-nav .section-7 a:hover					{ color: $section-7-color; }
-nav .section-7 a:hover .menu-icons		{ stroke: $section-7-color; }
+nav .section-7 a:hover					{ background: $section-7-color; }
 .section-7 a.button-important			{ background: $section-7-color; }
 .section-7 a.button-important:hover,
 .section-7 a.button-important:active	{ background: darken($section-7-color, 10%); }
@@ -143,8 +150,7 @@ nav .section-7 a:hover .menu-icons		{ stroke: $section-7-color; }
 */
 
 /* Section-8 */
-nav .section-8 a:hover					{ color: $section-8-color; }
-nav .section-8 a:hover .menu-icons		{ stroke: $section-8-color; }
+nav .section-8 a:hover					{ background: $section-8-color; }
 .section-8 a.button-important			{ background: $section-8-color; }
 .section-8 a.button-important:hover,
 .section-8 a.button-important:active	{ background: darken($section-8-color, 10%); }
@@ -156,8 +162,7 @@ nav .section-8 a:hover .menu-icons		{ stroke: $section-8-color; }
 */
 
 /* Section-9 */
-nav .section-9 a:hover					{ color: $section-9-color; }
-nav .section-9 a:hover .menu-icons		{ stroke: $section-9-color; }
+nav .section-9 a:hover					{ background: $section-9-color; }
 .section-9 a.button-important			{ background: $section-9-color; }
 .section-9 a.button-important:hover,
 .section-9 a.button-important:active	{ background: darken($section-9-color, 10%); }
@@ -169,8 +174,7 @@ nav .section-9 a:hover .menu-icons		{ stroke: $section-9-color; }
 */
 
 /* Section-10 */
-nav .section-10 a:hover					{ color: $section-10-color; }
-nav .section-10 a:hover .menu-icons		{ stroke: $section-10-color; }
+nav .section-10 a:hover					{ background: $section-10-color; }
 .section-10 a.button-important			{ background: $section-10-color; }
 .section-10 a.button-important:hover,
 .section-10 a.button-important:active	{ background: darken($section-10-color, 10%); }
@@ -182,8 +186,7 @@ nav .section-10 a:hover .menu-icons		{ stroke: $section-10-color; }
 */
 
 /* Section-11 */
-nav .section-11 a:hover					{ color: $section-11-color; }
-nav .section-11 a:hover .menu-icons		{ stroke: $section-11-color; }
+nav .section-11 a:hover					{ background: $section-11-color; }
 .section-11 a.button-important			{ background: $section-11-color; }
 .section-11 a.button-important:hover,
 .section-11 a.button-important:active	{ background: darken($section-11-color, 10%); }
@@ -195,8 +198,7 @@ nav .section-11 a:hover .menu-icons		{ stroke: $section-11-color; }
 */
 
 /* Section-12 */
-nav .section-12 a:hover					{ color: $section-12-color; }
-nav .section-12 a:hover .menu-icons		{ stroke: $section-12-color; }
+nav .section-12 a:hover					{ background: $section-12-color; }
 .section-12 a.button-important			{ background: $section-12-color; }
 .section-12 a.button-important:hover,
 .section-12 a.button-important:active	{ background: darken($section-12-color, 10%); }
@@ -209,23 +211,44 @@ nav .section-12 a:hover .menu-icons		{ stroke: $section-12-color; }
 
 
 /* Grid + responsive */
+/*  480px breakpoint  */
 @media only screen and (min-width: 480px)	{
-	nav							{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }  
+	.grid						{ -moz-column-count: 1; -moz-column-gap: $column-gap-small; -webkit-column-count: 1; -webkit-column-gap: $column-gap-small; column-count: 1; column-gap: $column-gap-small; width: 100%; }  
 }
 
-@media only screen and (min-width: 600px)	{
-	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }  
+/*  608px breakpoint  */
+@media only screen and (min-width: 608px)	{
+	.grid						{ -moz-column-count: 2; -moz-column-gap: $column-gap-small; -webkit-column-count: 2; -webkit-column-gap: $column-gap-small; column-count: 2; column-gap: $column-gap-small; width: 100%; }  
 }
 
+/*  768px breakpoint  */
 @media only screen and (min-width: 769px)	{
-	nav							{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }  
-	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }  
+	.grid						{ -moz-column-count: 3; -moz-column-gap: $column-gap-small; -webkit-column-count: 3; -webkit-column-gap: $column-gap-small; column-count: 3; column-gap: $column-gap-small; width: 100%; }  
 }
 
-@media only screen and (min-width: 1025px)	{
-	header h1					{ font-size: 2rem; padding: 0 1.5rem; }
-	.content					{ padding: 0 3rem; }
+/* Everything beyout that point has the side menu visible */
+/* Responsive layout styles */
+@media only screen and (min-width: 960px)	{
+	/* Base layout style */
+	#layout						{ padding-left: $menu-width; left: 0; }
+	#menu						{ margin-left: -$menu-width; width: $menu-width; left: $menu-width; }
+	#menuLink					{ display: none; }
+	#layout.active #menuLink	{ left: $menu-width; }
+	
+	/* Main content area */
+	header						{ padding: 0 3rem; height: 3rem; }
+	header h1					{ font-size: 2rem; line-height: 3rem; padding: 0 1.5rem; }
+	.content					{ padding: 3rem; padding-top: 6rem; }
+	.grid						{ -moz-column-count: 2; -moz-column-gap: $column-gap; -webkit-column-count: 2; -webkit-column-gap: $column-gap; column-count: 2; column-gap: $column-gap; width: 100%; }
+	
+}
 
-	nav							{ -moz-column-count: 6; -webkit-column-count: 6; column-count: 6; }  
-	.grid						{ -moz-column-count: 4; -moz-column-gap: $column-gap; -webkit-column-count: 4; -webkit-column-gap: $column-gap; column-count: 4; column-gap: $column-gap; }  
+/*  1280px breakpoint  */
+@media only screen and (min-width: 1280px)	{
+	.grid						{ -moz-column-count: 3; -moz-column-gap: $column-gap; -webkit-column-count: 3; -webkit-column-gap: $column-gap; column-count: 3; column-gap: $column-gap; width: 100%; }  
+}
+
+/*  1440px breakpoint  */
+@media only screen and (min-width: 1440px) {
+	.grid						{ -moz-column-count: 4; -moz-column-gap: $column-gap; -webkit-column-count: 4; -webkit-column-gap: $column-gap; column-count: 4; column-gap: $column-gap; width: 100%; }  
 }
