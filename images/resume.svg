@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>resume</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="resume" sketch:type="MSArtboardGroup" stroke="#000000" stroke-width="2">
+            <path d="M8,41.6128571 C8,42.1321429 8.45104762,42.5542857 9.00571429,42.5542857 L36.4502857,42.5542857 C37.1428571,42.5542857 37.7074286,42.025 37.7074286,41.3764286 L37.7074286,5.17785714 C37.7074286,4.52928571 37.1428571,4 36.4502857,4 L33.1260952,4 L33.1260952,11.4964286 L29.6975238,9.355 L26.2704762,11.4964286 L26.2704762,4 L9.00571429,4 C8.45104762,4 8,4.42285714 8,4.94142857 L8,41.6128571 M34.2491429,19.0007143 L11.3958095,19.0007143 M34.2491429,27.5692857 L11.3958095,27.5692857 M34.2491429,23.285 L11.3958095,23.285" id="Resume" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
