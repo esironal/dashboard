@@ -1,0 +1,110 @@
+/* Section-1 */
+nav .section-1 a:hover					{ color: $section-1-color; }
+nav .section-1 a:hover .menu-icons		{ stroke: $section-1-color; }
+.section-1 a.button-important			{ background: $section-1-color; }
+.section-1 a.button-important:hover,
+.section-1 a.button-important:active	{ background: darken($section-1-color, 10%); }
+
+/* Section-2 */
+nav .section-2 a:hover					{ color: $section-2-color; }	
+nav .section-2 a:hover .menu-icons		{ stroke: $section-2-color; }
+.section-2 a.button-important			{ background: $section-2-color; }
+.section-2 a.button-important:hover,
+.section-2 a.button-important:active	{ background: darken($section-2-color, 10%); }
+
+/* Section-3 */
+nav .section-3 a:hover					{ color: $section-3-color; }
+nav .section-3 a:hover .menu-icons		{ stroke: $section-3-color; }
+.section-3 a.button-important			{ background: $section-3-color; }
+.section-3 a.button-important:hover,
+.section-3 a.button-important:active	{ background: darken($section-3-color, 10%); }
+
+/* Section-4 */
+nav .section-4 a:hover					{ color: $section-4-color; }
+nav .section-4 a:hover .menu-icons		{ stroke: $section-4-color; }
+.section-4 a.button-important			{ background: $section-4-color; }
+.section-4 a.button-important:hover,
+.section-4 a.button-important:active	{ background: darken($section-4-color, 10%); }
+
+/* Section-5 */
+nav .section-5 a:hover					{ color: $section-5-color; }
+nav .section-5 a:hover .menu-icons		{ stroke: $section-5-color; }
+.section-5 a.button-important			{ background: $section-5-color; }
+.section-5 a.button-important:hover,
+.section-5 a.button-important:active	{ background: darken($section-5-color, 10%); }
+
+/* Section-6 */
+nav .section-6 a:hover					{ color: $section-6-color; }
+nav .section-6 a:hover .menu-icons		{ stroke: $section-6-color; }
+.section-6 a.button-important			{ background: $section-6-color; }
+.section-6 a.button-important:hover,
+.section-6 a.button-important:active	{ background: darken($section-6-color, 10%); }
+
+/* Section-7 */
+nav .section-7 a:hover					{ color: $section-7-color; }
+nav .section-7 a:hover .menu-icons		{ stroke: $section-7-color; }
+.section-7 a.button-important			{ background: $section-7-color; }
+.section-7 a.button-important:hover,
+.section-7 a.button-important:active	{ background: darken($section-7-color, 10%); }
+
+/* Section-8 */
+nav .section-8 a:hover					{ color: $section-8-color; }
+nav .section-8 a:hover .menu-icons		{ stroke: $section-8-color; }
+.section-8 a.button-important			{ background: $section-8-color; }
+.section-8 a.button-important:hover,
+.section-8 a.button-important:active	{ background: darken($section-8-color, 10%); }
+
+/* Section-9 */
+nav .section-9 a:hover					{ color: $section-9-color; }
+nav .section-9 a:hover .menu-icons		{ stroke: $section-9-color; }
+.section-9 a.button-important			{ background: $section-9-color; }
+.section-9 a.button-important:hover,
+.section-9 a.button-important:active	{ background: darken($section-9-color, 10%); }
+
+/* Section-10 */
+nav .section-10 a:hover					{ color: $section-10-color; }
+nav .section-10 a:hover .menu-icons		{ stroke: $section-10-color; }
+.section-10 a.button-important			{ background: $section-10-color; }
+.section-10 a.button-important:hover,
+.section-10 a.button-important:active	{ background: darken($section-10-color, 10%); }
+
+/* Section-11 */
+nav .section-11 a:hover					{ color: $section-11-color; }
+nav .section-11 a:hover .menu-icons		{ stroke: $section-11-color; }
+.section-11 a.button-important			{ background: $section-11-color; }
+.section-11 a.button-important:hover,
+.section-11 a.button-important:active	{ background: darken($section-11-color, 10%); }
+
+/* Section-12 */
+nav .section-12 a:hover					{ color: $section-12-color; }
+nav .section-12 a:hover .menu-icons		{ stroke: $section-12-color; }
+.section-12 a.button-important			{ background: $section-12-color; }
+.section-12 a.button-important:hover,
+.section-12 a.button-important:active	{ background: darken($section-12-color, 10%); }
+
+
+/* Navigation */
+nav .section-1 a:hover					{ background: rgba($section-1-color, .3); color: #fff; }
+nav .section-1 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-2 a:hover					{ background: rgba($section-2-color, .3); color: #fff; }	
+nav .section-2 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-3 a:hover					{ background: rgba($section-3-color, .3); color: #fff; }
+nav .section-3 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-4 a:hover					{ background: rgba($section-4-color, .3); color: #fff; }
+nav .section-4 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-5 a:hover					{ background: rgba($section-5-color, .3); color: #fff; }
+nav .section-5 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-6 a:hover					{ background: rgba($section-6-color, .3); color: #fff; }
+nav .section-6 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-7 a:hover					{ background: rgba($section-7-color, .3); color: #fff; }
+nav .section-7 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-8 a:hover					{ background: rgba($section-8-color, .3); color: #fff; }
+nav .section-8 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-9 a:hover					{ background: rgba($section-9-color, .3); color: #fff; }
+nav .section-9 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-10 a:hover					{ background: rgba($section-10-color, .3); color: #fff; }
+nav .section-10 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-11 a:hover					{ background: rgba($section-11-color, .3); color: #fff; }
+nav .section-11 a:hover .menu-icons		{ stroke: #fff; }
+nav .section-12 a:hover					{ background: rgba($section-12-color, .3); color: #fff; }
+nav .section-12 a:hover .menu-icons		{ stroke: #fff; }

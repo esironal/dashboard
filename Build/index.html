@@ -34,25 +34,6 @@
           </script>
         <!-- /Hammer reload -->
       
-		<script>
-				$(function() {
-					var pull 		= $('#pull');
-						menu 		= $('nav ul');
-						menuHeight	= menu.height();
-		
-					$(pull).on('click', function(e) {
-						e.preventDefault();
-						menu.slideToggle();
-					});
-		
-					$(window).resize(function(){
-		        		var w = $(window).width();
-		        		if(w > 320 && menu.is(':hidden')) {
-		        			menu.removeAttr('style');
-		        		}
-		    		});
-				});
-			</script>
 	</head>
 	<body>
 		<div class="icons">
@@ -196,12 +177,12 @@
 	</svg>
 </div>
 
+		<a name="top"></a>
 		<div class="page">
-			<header id="top">
+			<nav>
 				<h1 class="logo">Dashboard</h1>
-				<nav>
-					<ul>
-						<li class="section-1"><a href="#section-1"><svg class="menu-icons" id="icon-dev" viewBox="0 0 48 48"><use xlink:href="#icon-dev"></svg>Dev</a></li>
+				<ul>
+					<li class="section-1"><a href="#section-1"><svg class="menu-icons" id="icon-dev" viewBox="0 0 48 48"><use xlink:href="#icon-dev"></svg>Dev</a></li>
 <li class="section-2"><a href="#section-2"><svg class="menu-icons" id="icon-tools" viewBox="0 0 48 48"><use xlink:href="#icon-tools"></svg>Tools</a></li>
 <li class="section-3"><a href="#section-3"><svg class="menu-icons" id="icon-writing" viewBox="0 0 48 48"><use xlink:href="#icon-writing"></svg>Writing</a></li>
 <li class="section-4"><a href="#section-4"><svg class="menu-icons" id="icon-portfolio" viewBox="0 0 48 48"><use xlink:href="#icon-portfolio"></svg>Portfolio</a></li>
@@ -213,10 +194,9 @@
 <li class="section-10"><a href="#section-10"><svg class="menu-icons" id="icon-server" viewBox="0 0 48 48"><use xlink:href="#icon-server"></svg>Server</a></li>
 <li class="section-11"><a href="#section-11"><svg class="menu-icons" id="icon-other" viewBox="0 0 48 48"><use xlink:href="#icon-other"></svg>Other</a></li>
 <li class="section-12"><a href="#section-12"><svg class="menu-icons" id="icon-extra" viewBox="0 0 48 48"><use xlink:href="#icon-extra"></svg>Extra</a></li>
-					</ul>
-					<a href="#" id="pull">Menu</a>
-				</nav>
-			</header>
+				</ul>
+			</nav>
+			
 			<main>
 				<div class="content">
 					<section class="section-1" id="section-1" >
@@ -271,8 +251,8 @@
 	<h2>Portfolio</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
-		<a href="http://be.net/YourUsername" class="button button-important">Behance<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-<a href="http://dribbble.com/YourUsername" class="button button-important">Dribbble<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+		<a href="http://be.net/yourusername" class="button button-important">Behance<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://dribbble.com/yourusername" class="button button-important">Dribbble<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
@@ -349,8 +329,8 @@
 	<h2>Social</h2><a href="#top" class="top">top</a>
 	<div class="links grid">
 		
-		<a href="https://twitter.com/YourUsername" class="button button-important">Twitter<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
-<a href="http://alpha.app.net/YourUsername" class="button button-important">Alpha<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+		<a href="https://twitter.com/yourusername" class="button button-important">Twitter<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
+<a href="http://alpha.app.net/yourusername" class="button button-important">Alpha<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
 <a href="http://#" class="button button-important">Name<svg id="icon-arrow" viewBox="0 0 48 48"><use xlink:href="#icon-arrow"></svg></a>
@@ -414,21 +394,6 @@
 				</div>
 			</main>
 		</div>
-		<script>
-	$(function() {
-		$('a[href*=#]:not([href=#])').click(function() {
-			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-				var target = $(this.hash);
-				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-				if (target.length) {
-					$('html,body').animate({
-						scrollTop: target.offset().top
-					}, 500);
-				return false;
-				}
-			}
-		});
-	});
-</script>
+		<script src='javascripts/smoothscroll.js'></script>
 	</body>
 </html>

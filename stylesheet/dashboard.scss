@@ -1,48 +1,41 @@
 /* Dashboard by Stephane Curzi */
-/* Copyright 2014 © stephanecurzi.me */
+/* Copyright 2014 © Stephane Curzi, http://stephanecurzi.me */
 
 /* Import */
 @import '_variables';
+/* Colors */
+@import '_colors';
+// @import '_colors+grey';
 
 /* Base type */
 body							{ font-family: HelveticaNeue-Light, Helvetica, sans-serif; background: $background; }
 h1, h2, h3, h4					{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 700; }
 h1, h2							{ margin-top: 0; }
 
+ /* Main */
+.page							{ min-width: 20rem; }
 
-/* Layout */
-.page, header					{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
-.page							{ position: relative; min-width: 20rem; }
-header							{ width: 100%; z-index: 1000; overflow-y: auto; }
+/* Title */
+h1								{ font-size: 1.5rem; color: $color-highlight; text-align: center; width: 100%; margin: 0; margin-bottom: 1.5rem; float: left; box-sizing: border-box; }
 
-/* Header */
-header							{ background: $menu-color; background-image: url(black_denim.png); background-repeat: repeat; width: 100%; box-sizing: border-box; }
-header h1						{ background: $color-highlight; color: #fff; font-size: 1.5rem; line-height: 2.5rem; text-align: center; width: auto; margin: 0; padding: 0 1.125rem; display: block; box-sizing: border-box; float: left; }
+/* Animation */
+nav, nav a						{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
-/* CSS for high-resolution devices */
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5)	{
-	header						{ background-image: url(black_denim_@2X.png); background-size: 145px 145px; background-repeat: repeat; }
-}
-
-/* Main menu */
-nav								{ margin: 0; width: 100%; padding: 1rem 1.5rem; box-sizing: border-box; }
-nav								{ -moz-column-count: 2; -moz-column-gap: $column-gap-small; -webkit-column-count: 2; -webkit-column-gap: $column-gap-small; column-count: 2; column-gap: $column-gap-small; }
-nav ul							{ margin: 0; padding: 0; }
-nav li							{ list-style-type: none; width: 100%; margin-bottom: 1px; display: inline-block; }
-
-nav a							{ color: $menu-link-color; line-height: 3rem; /*padding: 0 1.5rem;*/ text-decoration: none; display: block; }
-nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; width: 1.75rem; height: 1.75rem; stroke: $menu-link-color; margin-top: .625rem; margin-right: .5rem; float: left; }
+/* Menu */
+nav								{ background: $menu-color; background-image: url(black_denim.png); background-repeat: repeat; margin: 0; padding: 1.5rem; width: 100%; height: auto; box-sizing: border-box; }
+nav ul							{ width: 100%; margin: 0; padding: 0; box-sizing: border-box; -moz-column-count: 2; -moz-column-gap: .25rem; -webkit-column-count: 2; -webkit-column-gap: .25rem; column-count: 2; column-gap: .25rem; } 
+nav li							{ list-style-type: none; margin-bottom: .25rem; }
+nav a							{ background: rgba($menu-link-color, 0.1); color: $menu-link-color; line-height: 3rem; text-decoration: none; display: block; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; }
+nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; stroke: $menu-link-color; width: 1.75rem; height: 1.75rem; margin-top: .625rem; margin-left: .625rem; margin-right: .5rem; float: left; }
 
 /* Main content area */
-.content						{ margin: 0 auto; padding: 0 1.5rem; box-sizing: border-box; max-width: 100rem; }
-section							{ padding: 1.5rem 0; position: relative; }
-section h2						{ color: $title-color; }
+.content						{ margin: 0 auto; padding: 1.5rem; box-sizing: border-box; max-width: 80rem; }
+section							{ margin-bottom: 2rem; position: relative; }
+section h2						{ color: $title-color; margin-top: 0; }
 
-.grid							{ -moz-column-count: 1; -moz-column-gap: $column-gap-small; -webkit-column-count: 1; -webkit-column-gap: $column-gap-small; column-count: 1; column-gap: $column-gap-small; width: 100%; }  
+.grid							{ -moz-column-count: 1; -moz-column-gap: $column-gap; -webkit-column-count: 1; -webkit-column-gap: $column-gap; column-count: 1; column-gap: $column-gap; width: 100%; } 
 
-a.top							{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: normal; font-size: 80%; text-decoration: none; padding: .125rem .375rem; position: absolute; top: 1.5rem; right: 0; }
+a.top							{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400; font-size: 80%; text-decoration: none; padding: .125rem .375rem; position: absolute; top: 0; right: 0; }
 a.top:link,
 a.top:visited					{ background: $button-normal-color; color: $button-normal-link; }
 a.top:hover,
@@ -51,7 +44,7 @@ a.top:active					{ background: $color-highlight; color: #fff; }
 .icons							{ width: 0; height: 0; display: none; }
 
 /* Buttons */
-a.button						{ text-decoration: none; font-size: 1.25rem; line-height: 3rem; height: 3rem; width: 100%; padding: 0 .625rem; margin-bottom: .625rem; position: relative; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+a.button						{ text-decoration: none; font-size: 1.25rem; line-height: 3rem; height: 3rem; width: 100%; padding: 0 .625rem; margin-bottom: $column-gap; position: relative; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 a.button						{ background: $button-important-color; color: $button-link; }
 a.button:hover,
 a.button:active					{ background: darken($button-important-color, 10%); }
@@ -64,213 +57,40 @@ a.button #icon-arrow			{ fill: none; stroke-width: $icon-stroke; width: 3rem; he
 a.button-important #icon-arrow	{ stroke: rgba($button-link, .4); }
 a.button-normal #icon-arrow		{ stroke: rgba($button-normal-link, .2); }
 
-/* Colors */
-/* Section-1 */
-nav .section-1 a:hover					{ color: $section-1-color; }
-nav .section-1 a:hover .menu-icons		{ stroke: $section-1-color; }
-.section-1 a.button-important			{ background: $section-1-color; }
-.section-1 a.button-important:hover,
-.section-1 a.button-important:active	{ background: darken($section-1-color, 10%); }
-/*
-.section-1 a.button-normal				{ background: lighten($section-1-color, 60%); color: $section-1-color; }
-.section-1 a.button-normal:hover,
-.section-1 a.button-normal:active		{ background: darken(lighten($section-1-color, 60%), 10%); }
-.section-1 a.button-normal #icon-arrow	{ stroke: rgba($section-1-color, .3); }
-*/
 
-/* Section-2 */
-nav .section-2 a:hover					{ color: $section-2-color; }	
-nav .section-2 a:hover .menu-icons		{ stroke: $section-2-color; }
-.section-2 a.button-important			{ background: $section-2-color; }
-.section-2 a.button-important:hover,
-.section-2 a.button-important:active	{ background: darken($section-2-color, 10%); }
-/*
-.section-2 a.button-normal				{ background: lighten($section-2-color, 60%); color: $section-2-color; }
-.section-2 a.button-normal:hover,
-.section-2 a.button-normal:active		{ background: darken(lighten($section-2-color, 60%), 10%); }
-.section-2 a.button-normal #icon-arrow	{ stroke: rgba($section-2-color, .3); }
-*/
-
-/* Section-3 */
-nav .section-3 a:hover					{ color: $section-3-color; }
-nav .section-3 a:hover .menu-icons		{ stroke: $section-3-color; }
-.section-3 a.button-important			{ background: $section-3-color; }
-.section-3 a.button-important:hover,
-.section-3 a.button-important:active	{ background: darken($section-3-color, 10%); }
-/*
-.section-3 a.button-normal				{ background: lighten($section-3-color, 60%); color: $section-3-color; }
-.section-3 a.button-normal:hover,
-.section-3 a.button-normal:active		{ background: darken(lighten($section-3-color, 60%), 10%); }
-.section-3 a.button-normal #icon-arrow	{ stroke: rgba($section-3-color, .3); }
-*/
-
-/* Section-4 */
-nav .section-4 a:hover					{ color: $section-4-color; }
-nav .section-4 a:hover .menu-icons		{ stroke: $section-4-color; }
-.section-4 a.button-important			{ background: $section-4-color; }
-.section-4 a.button-important:hover,
-.section-4 a.button-important:active	{ background: darken($section-4-color, 10%); }
-/*
-.section-4 a.button-normal				{ background: lighten($section-4-color, 60%); color: $section-4-color; }
-.section-4 a.button-normal:hover,
-.section-4 a.button-normal:active		{ background: darken(lighten($section-4-color, 60%), 10%); }
-.section-4 a.button-normal #icon-arrow	{ stroke: rgba($section-4-color, .3); }
-*/
-
-/* Section-5 */
-nav .section-5 a:hover					{ color: $section-5-color; }
-nav .section-5 a:hover .menu-icons		{ stroke: $section-5-color; }
-.section-5 a.button-important			{ background: $section-5-color; }
-.section-5 a.button-important:hover,
-.section-5 a.button-important:active	{ background: darken($section-5-color, 10%); }
-/*
-.section-5 a.button-normal				{ background: lighten($section-5-color, 60%); color: $section-5-color; }
-.section-5 a.button-normal:hover,
-.section-5 a.button-normal:active		{ background: darken(lighten($section-5-color, 60%), 10%); }
-.section-5 a.button-normal #icon-arrow	{ stroke: rgba($section-5-color, .3); }
-*/
-
-/* Section-6 */
-nav .section-6 a:hover					{ color: $section-6-color; }
-nav .section-6 a:hover .menu-icons		{ stroke: $section-6-color; }
-.section-6 a.button-important			{ background: $section-6-color; }
-.section-6 a.button-important:hover,
-.section-6 a.button-important:active	{ background: darken($section-6-color, 10%); }
-/*
-.section-6 a.button-normal				{ background: lighten($section-6-color, 60%); color: $section-6-color; }
-.section-6 a.button-normal:hover,
-.section-6 a.button-normal:active		{ background: darken(lighten($section-6-color, 60%), 10%); }
-.section-6 a.button-normal #icon-arrow	{ stroke: rgba($section-6-color, .3); }
-*/
-
-/* Section-7 */
-nav .section-7 a:hover					{ color: $section-7-color; }
-nav .section-7 a:hover .menu-icons		{ stroke: $section-7-color; }
-.section-7 a.button-important			{ background: $section-7-color; }
-.section-7 a.button-important:hover,
-.section-7 a.button-important:active	{ background: darken($section-7-color, 10%); }
-/*
-.section-7 a.button-normal				{ background: lighten($section-7-color, 60%); color: $section-7-color; }
-.section-7 a.button-normal:hover,
-.section-7 a.button-normal:active		{ background: darken(lighten($section-7-color, 60%), 10%); }
-.section-7 a.button-normal #icon-arrow	{ stroke: rgba($section-7-color, .3); }
-*/
-
-/* Section-8 */
-nav .section-8 a:hover					{ color: $section-8-color; }
-nav .section-8 a:hover .menu-icons		{ stroke: $section-8-color; }
-.section-8 a.button-important			{ background: $section-8-color; }
-.section-8 a.button-important:hover,
-.section-8 a.button-important:active	{ background: darken($section-8-color, 10%); }
-/*
-.section-8 a.button-normal				{ background: lighten($section-8-color, 60%); color: $section-8-color; }
-.section-8 a.button-normal:hover,
-.section-8 a.button-normal:active		{ background: darken(lighten($section-8-color, 60%), 10%); }
-.section-8 a.button-normal #icon-arrow	{ stroke: rgba($section-8-color, .3); }
-*/
-
-/* Section-9 */
-nav .section-9 a:hover					{ color: $section-9-color; }
-nav .section-9 a:hover .menu-icons		{ stroke: $section-9-color; }
-.section-9 a.button-important			{ background: $section-9-color; }
-.section-9 a.button-important:hover,
-.section-9 a.button-important:active	{ background: darken($section-9-color, 10%); }
-/*
-.section-9 a.button-normal				{ background: lighten($section-9-color, 60%); color: $section-9-color; }
-.section-9 a.button-normal:hover,
-.section-9 a.button-normal:active		{ background: darken(lighten($section-9-color, 60%), 10%); }
-.section-9 a.button-normal #icon-arrow	{ stroke: rgba($section-9-color, .3); }
-*/
-
-/* Section-10 */
-nav .section-10 a:hover					{ color: $section-10-color; }
-nav .section-10 a:hover .menu-icons		{ stroke: $section-10-color; }
-.section-10 a.button-important			{ background: $section-10-color; }
-.section-10 a.button-important:hover,
-.section-10 a.button-important:active	{ background: darken($section-10-color, 10%); }
-/*
-.section-10 a.button-normal				{ background: lighten($section-10-color, 60%); color: $section-10-color; }
-.section-10 a.button-normal:hover,
-.section-10 a.button-normal:active		{ background: darken(lighten($section-10-color, 60%), 10%); }
-.section-10 a.button-normal #icon-arrow	{ stroke: rgba($section-10-color, .3); }
-*/
-
-/* Section-11 */
-nav .section-11 a:hover					{ color: $section-11-color; }
-nav .section-11 a:hover .menu-icons		{ stroke: $section-11-color; }
-.section-11 a.button-important			{ background: $section-11-color; }
-.section-11 a.button-important:hover,
-.section-11 a.button-important:active	{ background: darken($section-11-color, 10%); }
-/*
-.section-11 a.button-normal				{ background: lighten($section-11-color, 60%); color: $section-11-color; }
-.section-11 a.button-normal:hover,
-.section-11 a.button-normal:active		{ background: darken(lighten($section-11-color, 60%), 10%); }
-.section-11 a.button-normal #icon-arrow	{ stroke: rgba($section-11-color, .3); }
-*/
-
-/* Section-12 */
-nav .section-12 a:hover					{ color: $section-12-color; }
-nav .section-12 a:hover .menu-icons		{ stroke: $section-12-color; }
-.section-12 a.button-important			{ background: $section-12-color; }
-.section-12 a.button-important:hover,
-.section-12 a.button-important:active	{ background: darken($section-12-color, 10%); }
-/*
-.section-12 a.button-normal				{ background: lighten($section-12-color, 60%); color: $section-12-color; }
-.section-12 a.button-normal:hover,
-.section-12 a.button-normal:active		{ background: darken(lighten($section-12-color, 60%), 10%); }
-.section-12 a.button-normal #icon-arrow	{ stroke: rgba($section-12-color, .3); }
-*/
-
-/* Grid + responsive */
+/* Media queries */
 @media only screen and (min-width: 480px)	{
-	nav							{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }  
+	nav ul						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; } 
 }
 
 @media only screen and (min-width: 600px)	{
-	nav							{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }  
-	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }  
+	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; } 
 }
 
 @media only screen and (min-width: 769px)	{
-/*	nav							{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }  */
-	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }  
+	nav ul						{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; } 
+	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; } 
 }
 
-@media only screen and (min-width: 1025px)	{
+@media only screen and (min-width: 1000px)	{
 	.page						{ padding-left: $menu-width; }
-	header						{ margin-left: -$menu-width; width: $menu-width; /*padding: 0 3rem;*/ position: fixed; top: 0; bottom: 0; left: $menu-width; }
-	header h1					{ font-size: 1.75rem; line-height: 4rem; padding: 0 1.5rem; width: 100%; }
-	.content					{ padding: 0 3rem; }
-	nav							{ -moz-column-count: 1; -webkit-column-count: 1; column-count: 1; padding-left: 0; padding-right: 0; }
-	nav a						{ padding-left: 1.5rem; padding-right: 1.5rem; } 
-	.grid						{ -moz-column-count: 3; -moz-column-gap: $column-gap; -webkit-column-count: 3; -webkit-column-gap: $column-gap; column-count: 3; column-gap: $column-gap; }
-	
-	nav .section-1 a:hover					{ background: rgba($section-1-color, .3); color: #fff; }
-	nav .section-1 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-2 a:hover					{ background: rgba($section-2-color, .3); color: #fff; }	
-	nav .section-2 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-3 a:hover					{ background: rgba($section-3-color, .3); color: #fff; }
-	nav .section-3 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-4 a:hover					{ background: rgba($section-4-color, .3); color: #fff; }
-	nav .section-4 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-5 a:hover					{ background: rgba($section-5-color, .3); color: #fff; }
-	nav .section-5 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-6 a:hover					{ background: rgba($section-6-color, .3); color: #fff; }
-	nav .section-6 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-7 a:hover					{ background: rgba($section-7-color, .3); color: #fff; }
-	nav .section-7 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-8 a:hover					{ background: rgba($section-8-color, .3); color: #fff; }
-	nav .section-8 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-9 a:hover					{ background: rgba($section-9-color, .3); color: #fff; }
-	nav .section-9 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-10 a:hover					{ background: rgba($section-10-color, .3); color: #fff; }
-	nav .section-10 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-11 a:hover					{ background: rgba($section-11-color, .3); color: #fff; }
-	nav .section-11 a:hover .menu-icons		{ stroke: #fff; }
-	nav .section-12 a:hover					{ background: rgba($section-12-color, .3); color: #fff; }
-	nav .section-12 a:hover .menu-icons		{ stroke: #fff; }
+	nav							{ margin-left: -$menu-width; width: $menu-width; position: fixed; top: 0; bottom: 0; left: $menu-width; }
+	nav ul						{ -moz-column-count: 1; -webkit-column-count: 1; column-count: 1; } 
+	.content					{ padding: 1.5rem 3rem; }
+	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
+	a.button					{ margin-bottom: $column-gap; }
+}
+
+@media only screen and (min-width: 1200px)	{
+	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
 }
 
 @media only screen and (min-width: 1400px)	{
-	.grid						{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }  
+	.grid						{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }
+}
+
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5)	{
+	nav							{ background-image: url(black_denim_@2X.png); background-size: 145px 145px; background-repeat: repeat; }
 }
