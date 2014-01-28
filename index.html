@@ -7,26 +7,44 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title><!-- $title --></title>
 		
-		<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		
 		<!-- @stylesheet normalize -->
 		<!-- @stylesheet dashboard -->
 		
 		<!-- @javascript jquery-1.10.2.min -->
 		<!-- @reload -->
+		<script>
+				$(function() {
+					var pull 		= $('#pull');
+						menu 		= $('nav ul');
+						menuHeight	= menu.height();
+		
+					$(pull).on('click', function(e) {
+						e.preventDefault();
+						menu.slideToggle();
+					});
+		
+					$(window).resize(function(){
+		        		var w = $(window).width();
+		        		if(w > 320 && menu.is(':hidden')) {
+		        			menu.removeAttr('style');
+		        		}
+		    		});
+				});
+			</script>
 	</head>
 	<body>
-		<div>
-			<!-- @include _icon -->
+		<!-- @include _icon -->
+		<div class="page">
 			<header id="top">
-				<div class="content">
-					<h1 id="logo"><!-- $title --></h1>
-					<nav>
-						<ul>
-							<!-- @include _menu -->
-						</ul>
-					</nav>
-				</div>
+				<h1 class="logo"><!-- $title --></h1>
+				<nav>
+					<ul>
+						<!-- @include _menu -->
+					</ul>
+					<a href="#" id="pull">Menu</a>
+				</nav>
 			</header>
 			<main>
 				<div class="content">
