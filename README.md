@@ -1,4 +1,4 @@
-dashboard.app
+dashboard
 =============
 
 Dashboard hammer template
