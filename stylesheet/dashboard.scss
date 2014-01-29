@@ -22,22 +22,27 @@ h1								{ font-size: 1.5rem; color: $color-highlight; text-align: center; widt
 nav, nav a						{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s ease-out; -ms-transition: all 0.2s ease-out; -o-transition: all 0.2s ease-out; transition: all 0.2s ease-out; }
 
 /* Menu */
-nav								{ background: $menu-color; background-image: url(black_denim.png); background-repeat: repeat; margin: 0; padding: 1.5rem; width: 100%; height: auto; box-sizing: border-box; }
-nav ul							{ width: 100%; margin: 0; padding: 0; box-sizing: border-box; -moz-column-count: 2; -moz-column-gap: .25rem; -webkit-column-count: 2; -webkit-column-gap: .25rem; column-count: 2; column-gap: .25rem; } 
-nav li							{ list-style-type: none; margin-bottom: .25rem; }
+nav								{ background: $menu-color; background-image: url(black_denim.png); background-repeat: repeat; margin: 0; padding: 1.5rem; width: 100%; height: auto; box-sizing: border-box; float: left; clear: both; }
+nav ul							{ width: 100%; margin: 0; padding: 0; box-sizing: border-box; float: left; clear: both; } 
+nav li							{ list-style-type: none; margin-bottom: $menu-gap; width: 50%; padding-right: $menu-gap; float: left; box-sizing: border-box; }
+nav li:nth-child(2n+2)			{ padding-right: 0; }
+
+
 nav a							{ background: rgba($menu-link-color, 0.1); color: $menu-link-color; line-height: 3rem; text-decoration: none; display: block; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; }
 nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; stroke: $menu-link-color; width: 1.75rem; height: 1.75rem; margin-top: .625rem; margin-left: .625rem; margin-right: .5rem; float: left; }
 
 /* Main content area */
-.content						{ margin: 0 auto; padding: 1.5rem; box-sizing: border-box; max-width: 80rem; }
-section							{ margin-bottom: 2rem; position: relative; }
+.content						{ margin: 0 auto; box-sizing: border-box; max-width: 80rem; }
+section							{ border-top: solid .0625rem rgba($button-normal-color, 0.5); width: 100%; padding: 1.5rem; position: relative; float: left; clear: both; box-sizing: border-box; }
 section h2						{ color: $title-color; margin-top: 0; }
 
-.grid							{ -moz-column-count: 1; -moz-column-gap: $column-gap; -webkit-column-count: 1; -webkit-column-gap: $column-gap; column-count: 1; column-gap: $column-gap; width: 100%; } 
+/* Button grid */
+.grid							{ padding: 0; margin: 0; width: 100%; float: left; clear: both; }
+.grid li						{ list-style-type: none; width: 100%; float: left; box-sizing: border-box; }
 
-a.top							{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400; font-size: 80%; text-decoration: none; padding: .125rem .375rem; position: absolute; top: 0; right: 0; }
+a.top							{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400; font-size: 80%; text-decoration: none; padding: .375rem; position: absolute; top: 0; right: 0; }
 a.top:link,
-a.top:visited					{ background: $button-normal-color; color: $button-normal-link; }
+a.top:visited					{ background: rgba($button-normal-color, 0.5); color: $color-highlight; }
 a.top:hover,
 a.top:active					{ background: $color-highlight; color: #fff; }
 
@@ -58,39 +63,63 @@ a.button-important #icon-arrow	{ stroke: rgba($button-link, .4); }
 a.button-normal #icon-arrow		{ stroke: rgba($button-normal-link, .2); }
 
 
-/* Media queries */
-@media only screen and (min-width: 480px)	{
-	nav ul						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; } 
-}
-
-@media only screen and (min-width: 600px)	{
-	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; } 
-}
-
-@media only screen and (min-width: 769px)	{
-	nav ul						{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; } 
-	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; } 
-}
-
+/* Menu */
 @media only screen and (min-width: 1000px)	{
 	.page						{ padding-left: $menu-width; }
 	nav							{ margin-left: -$menu-width; width: $menu-width; position: fixed; top: 0; bottom: 0; left: $menu-width; }
-	nav ul						{ -moz-column-count: 1; -webkit-column-count: 1; column-count: 1; } 
-	.content					{ padding: 1.5rem 3rem; }
-	.grid						{ -moz-column-count: 2; -webkit-column-count: 2; column-count: 2; }
-	a.button					{ margin-bottom: $column-gap; }
+	.content					{ padding: 0 3rem; }
+	section						{ padding: 3rem 0; }
 }
 
-@media only screen and (min-width: 1200px)	{
-	.grid						{ -moz-column-count: 3; -webkit-column-count: 3; column-count: 3; }
-}
-
-@media only screen and (min-width: 1400px)	{
-	.grid						{ -moz-column-count: 4; -webkit-column-count: 4; column-count: 4; }
-}
-
+/* Retina image */
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
 only screen and (-moz-min-device-pixel-ratio: 1.5),
 only screen and (min-device-pixel-ratio: 1.5)	{
 	nav							{ background-image: url(black_denim_@2X.png); background-size: 145px 145px; background-repeat: repeat; }
+}
+
+/* Grid */
+@media only screen and (min-width: 480px)	{
+	nav li									{ width: 33.33%; }
+	nav li:nth-child(2n+2)					{ padding-right: $menu-gap; }
+	nav li:nth-child(3n+3)					{ padding-right: 0; }
+}
+
+@media only screen and (min-width: 600px)	{
+	.grid li								{ width: 50%; padding-right: $column-gap; }
+	.grid li:nth-child(2n+2)				{ padding-right: 0; }
+}
+
+@media only screen and (min-width: 769px)	{
+	nav li									{ width: 25%; }
+	nav li:nth-child(3n+3)					{ padding-right: $menu-gap; }
+	nav li:nth-child(4n+4)					{ padding-right: 0; }
+
+	.grid li								{ width: 33.33%; }
+	.grid li:nth-child(2n+2)				{ padding-right: $column-gap; }
+	.grid li:nth-child(3n+3)				{ padding-right: 0; }
+
+}
+
+@media only screen and (min-width: 1000px)	{
+	nav li									{ width: 100%; padding-right: 0; }
+	nav li:nth-child(2n+2),
+	nav li:nth-child(3n+3),
+	nav li:nth-child(4n+4)					{ padding-right: 0; }
+
+	.grid li								{ width: 50%; }
+	.grid li:nth-child(3n+3)				{ padding-right: $column-gap; }
+	.grid li:nth-child(2n+2)				{ padding-right: 0; }
+}
+
+@media only screen and (min-width: 1200px)	{
+	.grid li								{ width: 33.33%; }
+	.grid li:nth-child(2n+2)				{ padding-right: $column-gap; }
+	.grid li:nth-child(3n+3)				{ padding-right: 0; }
+}
+
+@media only screen and (min-width: 1440px)	{
+	.grid li								{ width: 25%; }
+	.grid li:nth-child(3n+3)				{ padding-right: $column-gap; }
+	.grid li:nth-child(4n+4)				{ padding-right: 0; }
 }
