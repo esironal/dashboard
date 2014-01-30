@@ -1,6 +1,8 @@
 # Dashboard
 ### A simple dashboard Hammer template
 
+Visit the project website [Dashboard](http://stephanecurzi.github.io/dashboard)
+
 ## Why
 Dashboard is a simple way to build a page featuring all your favorite website. I grew tired of having a ton of bookmark and trying to keep them organized, I wanted a quickpage to launch my favorite website/services but I never got around to build something that I would update frequently enough.
 
