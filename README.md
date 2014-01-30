@@ -54,11 +54,12 @@ You can change the apearance of link buttons from an important button to a regul
 
 #### Gratuitous self promotion
 You can follow me on [Twitter](http://twitter.com/stephanecurzi).
-Read a little bit more about me at [stephanecurzi.me](http://www.stephanecurzi.me)
+
+Read a little bit more about me at [stephanecurzi.me](http://www.stephanecurzi.me).
+
 Check my other projects by going to [behance](http://be.net/stephanecurzi) or [dribble](http://dribbble.com/stephanecurzi).
+
 Check my CSS framework [BaselineCSS](http://baselinecss.com).
 
-I hate writing read-me’s !
-
-
+Thanks.
 
