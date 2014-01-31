@@ -8,7 +8,7 @@ Dashboard is a simple way to build a page featuring all your favorite website. I
 
 By using [Hammer For Mac](http://hammerformac.com), you can quickly build a dashboard with your favorite website links.
 
-Dashboard is already configured to show 12 section with different grouping, social, portfolio, etc. and has multiple preconfigured links.
+Dashboard is already configured to show 12 section with different grouping, social, portfolio, etc. and has multiple pre-configured links.
 
 ## Getting started
 Download the template ZIP of get the Github files and install in [Hammer For Mac](http://hammerformac.com).
@@ -39,7 +39,7 @@ You can change the appearance of link buttons with the variable `$type` using ei
 
  A pre-configured link is even easier, simply use one of the available includes, ex: `<!-- @include _twitter -->`, the link will be filled with your username configured in the **_user-info.html** file.
  
-#### Available pre-configured links
+## Available pre-configured links
 - Flickr —  `http://flickr.com/photos/$username`
 - Instagram —  `http://instagram.com/$username`
 - Picasa —  `http://picasaweb.google.com/$username`
@@ -63,7 +63,7 @@ You can change the appearance of link buttons with the variable `$type` using ei
 - Outlook mail —  `https://login.live.com/`
 - Flipboard —  `https://flipboard.com/profile/$username`
 
-#### Gratuitous self promotion
+## Gratuitous self promotion
 You can follow me on [Twitter](http://twitter.com/stephanecurzi).
 
 Read a little bit more about me at [stephanecurzi.me](http://www.stephanecurzi.me).
