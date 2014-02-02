@@ -68,7 +68,7 @@ You can follow me on [Twitter](http://twitter.com/stephanecurzi).
 
 Read a little bit more about me at [stephanecurzi.me](http://www.stephanecurzi.me).
 
-Check my other projects by going to [behance](http://be.net/stephanecurzi) or [dribble](http://dribbble.com/stephanecurzi).
+Check my other projects by going to [behance](http://be.net/stephanecurzi) or [dribbble](http://dribbble.com/stephanecurzi).
 
 Check my CSS framework [BaselineCSS](http://baselinecss.com).
 
