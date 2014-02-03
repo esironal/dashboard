@@ -7,13 +7,35 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		
-		<!-- @stylesheet normalize -->
-		<!-- @stylesheet site -->
+		<link rel='stylesheet' href='stylesheet/normalize.css'>
+		<link rel='stylesheet' href='stylesheet/site.css'>
 
-		<!-- @javascript modernizr.custom -->
-		<!-- @javascript classie -->
+		<script src='javascript/modernizr.custom.js'></script>
+		<script src='javascript/classie.js'></script>
 
-		<!-- @reload -->
+		
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
 	</head>
 	<body>
 		<nav class="project-link">
@@ -49,20 +71,83 @@
 		<div class="info">
 			<div class="content">
 				<div class="column">
-					<!-- @include _why -->
+					<h2>Why</h2>
+<p>Dashboard is a simple way to build a page featuring all your favorite website. I grew tired of having a ton of bookmark and trying to keep them organized, I wanted a quick way to launch my favorite website/services but I never got around to build something that I would update frequently enough.</p>
+
+<p>By using <a href="http://hammerformac.com">Hammer For Mac</a>, you can quickly build a dashboard with your favorite website links.</p>
+
+<p>Dashboard is already configured to show 12 section with different grouping, social, portfolio, etc. and has multiple pre-configured links.</p>
+
 				</div>
 				<div class="column">
-					<!-- @include _getting-started -->
+					<h2>Getting started</h2>
+<p>Download the template ZIP of get the Github files and install in <a href="http://hammerformac.com">Hammer For Mac</a>.</p>
+
+<p>Create your project and modify the files in the <strong>_user-defined</strong> folder.</p>
+
+<p>Deploy the resulting <strong>build</strong> folder.</p>
+
+<p>You don’t have to know your way around <a href="http://hammerformac.com">Hammer For Mac</a> but it helps with variables behaviour. I encourage you to go to the website and look around the <a href="http://hammerformac.com/docs/">docs</a>.</p>
+
 				</div>
 			</div>
 		</div>
 		<div class="customize">
 			<div class="content">
 				<div class="column first">
-					<!-- @include _customize -->
+					<h2>Customize the dashboard</h2>
+<p>You shouldn’t have to edit any files outside the <strong>_user-defined</strong>  folder, it contain your menu, sections and link list. With this folder, you’ll have everything to create your personalized dashboard.</p>
+
+<p><strong>_user-info.html</strong> contain the base variables for your dashboard.</p>
+
+<ul>
+  <li><code>$tilte</code>: name of the dashboard</li>
+  <li><code>$username</code>: base username used with preconfigured links</li>
+  <li><code>$section-(1 to 12)-name</code>: name for the 12 sections</li>
+  <li><code>$section-(1 to 12)-icon</code>: SVG icon for the 12 sections</li>
+</ul>
+
+<p><strong>_user-menu.html</strong> and <strong>_user-sections.html</strong> list your sections, simply remove the sections you dont want to appear on your dashboard or keep it as is for the 12 preconfigured sections. One file is for the menu and the other list the actual content of the page.</p>
+
+<p><strong>_links-(1 to 12).html</strong> are where you list your link using the simple variables and includes structure or by using one of the pre-configured link. For a regular link, you would write a <code>$link-href</code> and <code>$link-name</code>.</p>
+
+<pre><code>&lt;!-- $link-href flickr.com/myname --&gt;
+&lt;!-- $link-name Flickr --&gt;
+&lt;!-- @include _button --&gt;
+</code></pre>
+
+<p>You can change the appearance of link buttons with the variable <code>$type</code> using either <code>important</code> or <code>normal</code>. Each section is configured to start with <code>important</code> buttons.</p>
+
+<p>A pre-configured link is even easier, simply use one of the available includes, ex: <code>&lt;!-- @include _twitter --&gt;</code>, the link will be filled with your username configured in the <strong>_user-info.html</strong> file.</p>
+
 				</div>
 				<div class="column preconfigured">
-					<!-- @include _preconfigured -->
+					<h3>Pre-configured links</h3>
+<ul>
+  <li>Flickr <span>http://flickr.com/photos/$username</span></li>
+  <li>Instagram <span>http://instagram.com/$username</span></li>
+  <li>Picasa <span>http://picasaweb.google.com/$username</span></li>
+  <li>Behance <span>http://www.behance.net/$username</span></li>
+  <li>Dribbble <span>http://dribbble.com/$username</span></li>
+  <li>Dunked <span>http://$username.dunked.com</span></li>
+  <li>About.me <span>http://about.me/$username</span></li>
+  <li>Flavor.me <span>http://flavors.me/$username</span></li>
+  <li>Vizify <span>https://www.vizify.com/$username</span></li>
+  <li>Zerply <span>http://zerply.com/$username</span></li>
+  <li>Alpha <span>http://alpha.app.net/$username</span></li>
+  <li>Discus <span>http://disqus.com/$username</span></li>
+  <li>Facebook <span>http://facebook.com/$username</span></li>
+  <li>LinkedIn <span>http://www.linkedin.com</span></li>
+  <li>Twitter <span>https://twitter.com/$username</span></li>
+  <li>Prevue <span>http://$username.prevue.it/</span></li>
+  <li>Medium <span>https://medium.com/@$username</span></li>
+  <li>Scriptogr.am <span>http://scriptogr.am/$username</span></li>
+  <li>Tumblr <span>http://$username.tumblr.com/</span></li>
+  <li>Gmail <span>https://mail.google.com/</span></li>
+  <li>Outlook mail <span>https://login.live.com/</span></li>
+  <li>Flipboard <span>https://flipboard.com/profile/$username</span></li>
+</ul>
+
 				</div>
 			</div>
 		</div>
@@ -84,8 +169,16 @@
 				</div>
 			</div>
 		</footer>
-		<!-- @javascript picturefill -->
-		<!-- @javascript cbpAnimatedHeader -->
-		<!-- @include _analytics -->
+		<script src='javascript/picturefill.js'></script>
+		<script src='javascript/cbpAnimatedHeader.js'></script>
+		<script>
+			(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+				(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+				m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			ga('create', 'UA-4337541-8', 'stephanecurzi.github.io');
+			ga('send', 'pageview');
+		</script>
 	</body>
 </html>
