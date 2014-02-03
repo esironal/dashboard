@@ -41,7 +41,7 @@ You can change the appearance of link buttons with the variable `$type` using ei
 
  A pre-configured link is even easier, simply use one of the available includes, ex: `<!-- @include _twitter -->`, the link will be filled with your username configured in the **_user-info.html** file.
  
-## Available pre-configured links
+## Pre-configured links
 - Flickr —  `http://flickr.com/photos/$username`
 - Instagram —  `http://instagram.com/$username`
 - Picasa —  `http://picasaweb.google.com/$username`
@@ -59,7 +59,7 @@ You can change the appearance of link buttons with the variable `$type` using ei
 - Twitter —  `https://twitter.com/$username`
 - Prevue —  `http://$username.prevue.it/`
 - Medium —  `https://medium.com/@$username`
-- Scriptogram —  `http://scriptogr.am/$username`
+- Scriptogr.am —  `http://scriptogr.am/$username`
 - Tumblr —  `http://$username.tumblr.com/`
 - Gmail —  `https://mail.google.com/`
 - Outlook mail —  `https://login.live.com/`
