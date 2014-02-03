@@ -345,6 +345,9 @@ nav.project-link-highlight {
   header, header .content {
     height: 25rem; }
 
+  .title em {
+    border-bottom-width: 0.125rem; }
+
   .images {
     height: 36rem; }
 
