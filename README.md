@@ -33,7 +33,9 @@ You shouldn’t have to edit any files outside the **_user-defined**  folder, it
 
 **_links-(1 to 12).html** are where you list your link using the simple variables and includes structure or by using one of the pre-configured link. For a regular link, you would write a `$link-href` and `$link-name`.
 
-	<!-- $link-href flickr.com/myname --><!-- $link-name Flickr --><!-- @include _button -->
+	<!-- $link-href flickr.com/myname -->
+	<!-- $link-name Flickr -->
+	<!-- @include _button -->
 
 You can change the appearance of link buttons with the variable `$type` using either `important` or `normal`. Each section is configured to start with `important` buttons.
 
