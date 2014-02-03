@@ -1,0 +1,23 @@
+### Pre-configured links
+- Flickr <span>http://flickr.com/photos/$username</span>
+- Instagram <span>http://instagram.com/$username</span>
+- Picasa <span>http://picasaweb.google.com/$username</span>
+- Behance <span>http://www.behance.net/$username</span>
+- Dribbble <span>http://dribbble.com/$username</span>
+- Dunked <span>http://$username.dunked.com</span>
+- About.me <span>http://about.me/$username</span>
+- Flavor.me <span>http://flavors.me/$username</span>
+- Vizify <span>https://www.vizify.com/$username</span>
+- Zerply <span>http://zerply.com/$username</span>
+- Alpha <span>http://alpha.app.net/$username</span>
+- Discus <span>http://disqus.com/$username</span>
+- Facebook <span>http://facebook.com/$username</span>
+- LinkedIn <span>http://www.linkedin.com</span>
+- Twitter <span>https://twitter.com/$username</span>
+- Prevue <span>http://$username.prevue.it/</span>
+- Medium <span>https://medium.com/@$username</span>
+- Scriptogr.am <span>http://scriptogr.am/$username</span>
+- Tumblr <span>http://$username.tumblr.com/</span>
+- Gmail <span>https://mail.google.com/</span>
+- Outlook mail <span>https://login.live.com/</span>
+- Flipboard <span>https://flipboard.com/profile/$username</span>

@@ -7,55 +7,85 @@
 		
 		<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		
-		<link rel='stylesheet' href='stylesheet/normalize.css'>
-		<link rel='stylesheet' href='stylesheet/site.css'>
+		<!-- @stylesheet normalize -->
+		<!-- @stylesheet site -->
 
-		
-        <!-- Hammer reload -->
-          <script>
-            setInterval(function(){
-              try {
-                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
-                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
-                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
-                ws.onmessage = function(){
-                  var links = document.getElementsByTagName('link'); 
-                    for (var i = 0; i < links.length;i++) { 
-                    var link = links[i]; 
-                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
-                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
-                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
-                    }
-                  }
-                }
-              }catch(e){}
-            }, 1000)
-          </script>
-        <!-- /Hammer reload -->
-      
+		<!-- @javascript modernizr.custom -->
+		<!-- @javascript classie -->
+
+		<!-- @reload -->
 	</head>
 	<body>
+		<nav class="project-link">
+			<ul>
+				<li class="download"><a href="dashboard.zip" class="button">Download<span> Hammer template</span></a></li>
+				<li class="github"><a href="https://github.com/stephanecurzi/dashboard" class="button"><span>View project on </span>Github</a></li>
+			</ul>
+		</nav>
 		<header>
-			<span class="title">
-				<h1>Dashboard</h1>
-				<h2>A simple dashboard <em>Hammer</em> template.</h2>
-			</span>
-			<nav>
-				<ul>
-					<li class="download"><a href="">Download Hammer template</a></li>
-					<li class="github"><a href="">View project on github</a></li>
-				</ul>
-			</nav>
-		</header>
-		
-		<main>
 			<div class="content">
-				<h1>Quickly build a dashboard with your favorite website links</h1>
-				<section class="column">
-					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis.</p>
-					<p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis.</p>
-				</section>
+				<div class="title">
+					<h1>Dashboard</h1>
+					<h2 class="tagline">A simple <em>Hammer</em> template.</h2>
+				</div>
 			</div>
-		</main>
+		</header>
+		<div class="intro">
+			<div class="content">
+				<h1>Help you quickly build a responsive dashboard</h1>
+			</div>
+			<div class="images">
+				<span data-picture>
+					<span data-src="../images/iphone.png"></span>
+					<span data-src="../images/ipad.png" data-media="(min-width: 768px)"></span>
+					<span data-src="../images/ipad-landscape.png" data-media="(min-width: 1024px)"></span>
+					<span data-src="../images/desktop.png" data-media="(min-width: 1280px)"></span>
+					<noscript>
+						<img src="../images/ipad.png">
+					</noscript>
+				</span>
+			</div>
+		</div>
+		<div class="info">
+			<div class="content">
+				<div class="column">
+					<!-- @include _why -->
+				</div>
+				<div class="column">
+					<!-- @include _getting-started -->
+				</div>
+			</div>
+		</div>
+		<div class="customize">
+			<div class="content">
+				<div class="column first">
+					<!-- @include _customize -->
+				</div>
+				<div class="column preconfigured">
+					<!-- @include _preconfigured -->
+				</div>
+			</div>
+		</div>
+		<footer>
+			<div class="content">
+				<!--<ul class="link">
+					<li class="download"><a href="dashboard.zip" class="button">Download<span> Hammer template</span></a></li>
+					<li class="github"><a href="https://github.com/stephanecurzi/dashboard" class="button"><span>View project on </span>Github</a></li>
+				</ul>-->
+				<ul class="share">
+					<li class="twitter"><a href="https://twitter.com/home?status=http://stephanecurzi.github.io/dashboard/" target="_blank" class="button">Tweet this</a></li>
+					<li class="facebook"><a href="http://www.facebook.com/sharer/sharer.php?u=http://stephanecurzi.github.io/dashboard/" target="_blank" class="button">Like this</a></li>
+					<li class="google"><a href="https://plus.google.com/share?url=http://stephanecurzi.github.io/dashboard/" target="_blank" class="button">Share on G+</a></li>
+				</ul>
+				<div class="smalltext">
+					<p>&copy; 2014 <a href="http://stephanecurzi.me">Stéphane Curzi</a></p>
+					<p>Follow me on <a href="http://twitter.com/stephanecurzi">twitter</a>, Read a little bit more about me at <a href="http://www.stephanecurzi.me">stephanecurzi.me</a>.<br>
+					Check my other projects by going to <a href="http://behance.net/stephanecurzi">behance</a> or <a href="http://dribbble.com/stephanecurzi">dribbble</a>. Check my CSS framework <a href="http://baselinecss.com">BaselineCSS</a>.</p>
+				</div>
+			</div>
+		</footer>
+		<!-- @javascript picturefill -->
+		<!-- @javascript cbpAnimatedHeader -->
+		<!-- @include _analytics -->
 	</body>
 </html>
