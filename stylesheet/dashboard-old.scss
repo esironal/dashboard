@@ -24,8 +24,8 @@ nav, nav a						{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.
 /* Menu */
 nav								{ background: $menu-color; background-image: url(black_denim.png); background-repeat: repeat; margin: 0; padding: 1.5rem; width: 100%; height: auto; box-sizing: border-box; float: left; clear: both; }
 nav ul							{ width: 100%; margin: 0; padding: 0; box-sizing: border-box; float: left; clear: both; } 
-nav li							{ list-style-type: none; margin-bottom: 2%; width: 49%; margin-left: 2%; float: left; box-sizing: border-box; }
-nav li:nth-child(2n+1)			{ margin-left: 0; }
+nav li							{ list-style-type: none; margin-bottom: $menu-gap; width: 50%; padding-right: $menu-gap; float: left; box-sizing: border-box; }
+nav li:nth-child(2n+2)			{ padding-right: 0; }
 
 
 nav a							{ background: rgba($menu-link-color, 0.1); color: $menu-link-color; line-height: 3rem; text-decoration: none; display: block; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; }
@@ -38,7 +38,7 @@ section h2						{ color: $title-color; margin-top: 0; }
 
 /* Button grid */
 .grid							{ padding: 0; margin: 0; width: 100%; float: left; clear: both; }
-.grid li						{ list-style-type: none; width: 100%; float: left; box-sizing: border-box; margin-left: 2%; }
+.grid li						{ list-style-type: none; width: 100%; float: left; box-sizing: border-box; }
 
 a.top							{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400; font-size: 80%; text-decoration: none; padding: .375rem; position: absolute; top: 0; right: 0; }
 a.top:link,
@@ -80,45 +80,46 @@ only screen and (min-device-pixel-ratio: 1.5)	{
 
 /* Grid */
 @media only screen and (min-width: 480px)	{
-	nav li									{ width: 32%; }
-	nav li:nth-child(3n+1)					{ margin-left: 0; }
+	nav li									{ width: 33.33%; }
+	nav li:nth-child(2n+2)					{ padding-right: $menu-gap; }
+	nav li:nth-child(3n+3)					{ padding-right: 0; }
 }
 
 @media only screen and (min-width: 600px)	{
-	.grid li								{ width: 49%; }
-	.grid li:nth-child(2n+1)				{ margin-left: 0; }
+	.grid li								{ width: 50%; padding-right: $column-gap; }
+	.grid li:nth-child(2n+2)				{ padding-right: 0; }
 }
 
 @media only screen and (min-width: 769px)	{
-	nav li									{ width: 23.5%; }
-	nav li:nth-child(3n+1)					{ margin-left: 2%; }
-	nav li:nth-child(4n+1)					{ margin-left: 0; }
+	nav li									{ width: 25%; }
+	nav li:nth-child(3n+3)					{ padding-right: $menu-gap; }
+	nav li:nth-child(4n+4)					{ padding-right: 0; }
 
-	.grid li								{ width: 32%; }
-	.grid li:nth-child(2n+1)				{ margin-left: 2%; }
-	.grid li:nth-child(3n+1)				{ margin-left: 0; }
+	.grid li								{ width: 33.33%; }
+	.grid li:nth-child(2n+2)				{ padding-right: $column-gap; }
+	.grid li:nth-child(3n+3)				{ padding-right: 0; }
 
 }
 
 @media only screen and (min-width: 1000px)	{
-	nav li									{ width: 100%; margin-left: 0; }
-	nav li:nth-child(2n+1),
-	nav li:nth-child(3n+1),
-	nav li:nth-child(4n+1)					{ margin-left: 0; }
+	nav li									{ width: 100%; padding-right: 0; }
+	nav li:nth-child(2n+2),
+	nav li:nth-child(3n+3),
+	nav li:nth-child(4n+4)					{ padding-right: 0; }
 
-	.grid li								{ width: 49%; }
-	.grid li:nth-child(3n+1)				{ margin-left: 2%; }
-	.grid li:nth-child(2n+1)				{ margin-left: 0; }
+	.grid li								{ width: 50%; }
+	.grid li:nth-child(3n+3)				{ padding-right: $column-gap; }
+	.grid li:nth-child(2n+2)				{ padding-right: 0; }
 }
 
 @media only screen and (min-width: 1200px)	{
-	.grid li								{ width: 32%; }
-	.grid li:nth-child(2n+1)				{ margin-left: 2%; }
-	.grid li:nth-child(3n+1)				{ margin-left: 0; }
+	.grid li								{ width: 33.33%; }
+	.grid li:nth-child(2n+2)				{ padding-right: $column-gap; }
+	.grid li:nth-child(3n+3)				{ padding-right: 0; }
 }
 
 @media only screen and (min-width: 1440px)	{
-	.grid li								{ width: 23.5%; }
-	.grid li:nth-child(3n+1)				{ margin-left: 2%; }
-	.grid li:nth-child(4n+1)				{ margin-left: 0; }
+	.grid li								{ width: 25%; }
+	.grid li:nth-child(3n+3)				{ padding-right: $column-gap; }
+	.grid li:nth-child(4n+4)				{ padding-right: 0; }
 }
