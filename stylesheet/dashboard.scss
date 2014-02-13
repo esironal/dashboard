@@ -80,7 +80,8 @@ only screen and (min-device-pixel-ratio: 1.5)	{
 
 /* Grid */
 @media only screen and (min-width: 480px)	{
-	nav li									{ width: 32%; }
+	nav li									{ width: 32%; margin-left: 2%; }
+	nav li:nth-child(2n+1)					{ margin-left: 2%; }
 	nav li:nth-child(3n+1)					{ margin-left: 0; }
 }
 
