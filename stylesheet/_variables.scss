@@ -3,7 +3,7 @@ $background:				#fff;
 $icon-stroke:				2px;
 
 $menu-width:				18rem;
-$menu-color:				#333;
+$menu-color:				#191919;
 $menu-link-color:			rgba(255, 255, 255, 0.5);
 $menu-link-hover:			rgba(35, 35, 35, 1);
 
@@ -38,3 +38,7 @@ $section-12-color:			rgba(130, 30, 120, 1);
 
 $column-gap:				1rem;
 $menu-gap:					.25rem;
+
+@mixin background-menu {
+  background-image: url(black_denim.png); background-repeat: repeat; 
+}
