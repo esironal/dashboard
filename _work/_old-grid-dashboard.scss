@@ -59,8 +59,8 @@ a.button-normal:hover,
 a.button-normal:active			{ background: darken($button-normal-color, 10%); }
 
 a.button #icon-arrow			{ fill: none; stroke-width: $icon-stroke; width: 3rem; height: 3rem; position: absolute; top: 0; right: 0; }
-a.button-important #icon-arrow	{ stroke: rgba($button-link, .4); }
-a.button-normal #icon-arrow		{ stroke: rgba($button-normal-link, .2); }
+a.button-important #icon-arrow	{ stroke: rgba($button-link, 1); }
+a.button-normal #icon-arrow		{ stroke: rgba($button-link, 1); }
 
 
 /* Menu */
