@@ -4,11 +4,17 @@ body							{ background: $background; }
 h1								{ color: $color-highlight; }
 
 nav								{ background: $menu-color; }
-nav a							{ background: rgba($menu-link-color, 0.1); color: $menu-link-color; }
+nav a							{ background: rgba($menu-link-color, .08); color: $menu-link-color; }
+nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; stroke: $menu-link-color; }
+nav a:hover						{ background: rgba($menu-link-color, .04); color: #fff; }
+nav a:hover .menu-icons			{ stroke: #fff; }
 
-a.top:visited					{ background: rgba($button-normal-color, 0.5); color: $color-highlight; }
+section							{ border-top: solid .0625rem rgba($button-normal-color, 0.5); }
+
+a.top:link,
+a.top:visited					{ background: rgba($button-normal-color, 0.5); color: $top-color; }
 a.top:hover,
-a.top:active					{ background: $color-highlight; color: #fff; }
+a.top:active					{ background: $top-color; color: #fff; }
 
 a.button						{ background: $button-important-color; color: $button-link; }
 a.button:hover,
@@ -18,9 +24,3 @@ a.button-normal					{ background: $button-normal-color; color: $button-normal-li
 a.button-normal:hover,
 a.button-normal:active			{ background: darken($button-normal-color, 10%); }
 
-/* Retina image */
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
-only screen and (-moz-min-device-pixel-ratio: 1.5),
-only screen and (min-device-pixel-ratio: 1.5)	{
-	nav							{ background-image: url(black_denim_@2X.png); background-repeat: repeat; background-size: 145px 145px; }
-}
