@@ -28,121 +28,133 @@ nav .section-12 a:hover					{ border: solid 1px $section-12-color; color: $secti
 nav .section-12 a:hover .menu-icons		{ stroke: $section-12-color; }
 
 /* Section-1 */
-.section-1 a.button-important			{ background: $section-1-color; }
+.section-1 a.button-important					{ background: $section-1-color; }
 .section-1 a.button-important:hover,
-.section-1 a.button-important:active	{ background: darken($section-1-color, 10%); }
+.section-1 a.button-important:active			{ background: darken($section-1-color, 10%); }
 
-.section-1 a.button-normal				{ background: lighten($section-1-color, 60%); color: $section-1-color; }
+.section-1 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-1 a.button-normal:hover,
-.section-1 a.button-normal:active		{ background: darken(lighten($section-1-color, 60%), 10%); }
-.section-1 a.button-normal #icon-arrow	{ stroke: rgba($section-1-color, .3); }
+.section-1 a.button-normal:active				{ border: solid 1px $section-1-color; color: $section-1-color; }
+.section-1 a.button-normal:hover  #icon-arrow,
+.section-1 a.button-normal:active #icon-arrow	{ stroke: $section-1-color; }
 
 /* Section-2 */
-.section-2 a.button-important			{ background: $section-2-color; }
+.section-2 a.button-important					{ background: $section-2-color; }
 .section-2 a.button-important:hover,
-.section-2 a.button-important:active	{ background: darken($section-2-color, 10%); }
+.section-2 a.button-important:active			{ background: darken($section-2-color, 10%); }
 
-.section-2 a.button-normal				{ background: lighten($section-2-color, 60%); color: $section-2-color; }
+.section-2 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-2 a.button-normal:hover,
-.section-2 a.button-normal:active		{ background: darken(lighten($section-2-color, 60%), 10%); }
-.section-2 a.button-normal #icon-arrow	{ stroke: rgba($section-2-color, .3); }
+.section-2 a.button-normal:active				{ border: solid 1px $section-2-color; color: $section-2-color; }
+.section-2 a.button-normal:hover  #icon-arrow,
+.section-2 a.button-normal:active #icon-arrow	{ stroke: $section-2-color; }
 
-/* Section-3 */
-.section-3 a.button-important			{ background: $section-3-color; }
+/* section-3 */
+.section-3 a.button-important					{ background: $section-3-color; }
 .section-3 a.button-important:hover,
-.section-3 a.button-important:active	{ background: darken($section-3-color, 10%); }
+.section-3 a.button-important:active			{ background: darken($section-3-color, 10%); }
 
-.section-3 a.button-normal				{ background: lighten($section-3-color, 50%); color: $section-3-color; }
+.section-3 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-3 a.button-normal:hover,
-.section-3 a.button-normal:active		{ background: darken(lighten($section-3-color, 50%), 10%); }
-.section-3 a.button-normal #icon-arrow	{ stroke: rgba($section-3-color, .3); }
+.section-3 a.button-normal:active				{ border: solid 1px $section-3-color; color: $section-3-color; }
+.section-3 a.button-normal:hover  #icon-arrow,
+.section-3 a.button-normal:active #icon-arrow	{ stroke: $section-3-color; }
 
-/* Section-4 */
-.section-4 a.button-important			{ background: $section-4-color; }
+/* section-4 */
+.section-4 a.button-important					{ background: $section-4-color; }
 .section-4 a.button-important:hover,
-.section-4 a.button-important:active	{ background: darken($section-4-color, 10%); }
+.section-4 a.button-important:active			{ background: darken($section-4-color, 10%); }
 
-.section-4 a.button-normal				{ background: lighten($section-4-color, 50%); color: $section-4-color; }
+.section-4 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-4 a.button-normal:hover,
-.section-4 a.button-normal:active		{ background: darken(lighten($section-4-color, 50%), 10%); }
-.section-4 a.button-normal #icon-arrow	{ stroke: rgba($section-4-color, .3); }
+.section-4 a.button-normal:active				{ border: solid 1px $section-4-color; color: $section-4-color; }
+.section-4 a.button-normal:hover  #icon-arrow,
+.section-4 a.button-normal:active #icon-arrow	{ stroke: $section-4-color; }
 
-/* Section-5 */
-.section-5 a.button-important			{ background: $section-5-color; }
+/* section-5 */
+.section-5 a.button-important					{ background: $section-5-color; }
 .section-5 a.button-important:hover,
-.section-5 a.button-important:active	{ background: darken($section-5-color, 10%); }
+.section-5 a.button-important:active			{ background: darken($section-5-color, 10%); }
 
-.section-5 a.button-normal				{ background: lighten($section-5-color, 50%); color: $section-5-color; }
+.section-5 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-5 a.button-normal:hover,
-.section-5 a.button-normal:active		{ background: darken(lighten($section-5-color, 50%), 10%); }
-.section-5 a.button-normal #icon-arrow	{ stroke: rgba($section-5-color, .3); }
+.section-5 a.button-normal:active				{ border: solid 1px $section-5-color; color: $section-5-color; }
+.section-5 a.button-normal:hover  #icon-arrow,
+.section-5 a.button-normal:active #icon-arrow	{ stroke: $section-5-color; }
 
-/* Section-6 */
-.section-6 a.button-important			{ background: $section-6-color; }
+/* section-6 */
+.section-6 a.button-important					{ background: $section-6-color; }
 .section-6 a.button-important:hover,
-.section-6 a.button-important:active	{ background: darken($section-6-color, 10%); }
+.section-6 a.button-important:active			{ background: darken($section-6-color, 10%); }
 
-.section-6 a.button-normal				{ background: lighten($section-6-color, 45%); color: $section-6-color; }
+.section-6 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-6 a.button-normal:hover,
-.section-6 a.button-normal:active		{ background: darken(lighten($section-6-color, 45%), 10%); }
-.section-6 a.button-normal #icon-arrow	{ stroke: rgba($section-6-color, .3); }
+.section-6 a.button-normal:active				{ border: solid 1px $section-6-color; color: $section-6-color; }
+.section-6 a.button-normal:hover  #icon-arrow,
+.section-6 a.button-normal:active #icon-arrow	{ stroke: $section-6-color; }
 
-/* Section-7 */
-.section-7 a.button-important			{ background: $section-7-color; }
+/* section-7 */
+.section-7 a.button-important					{ background: $section-7-color; }
 .section-7 a.button-important:hover,
-.section-7 a.button-important:active	{ background: darken($section-7-color, 10%); }
+.section-7 a.button-important:active			{ background: darken($section-7-color, 10%); }
 
-.section-7 a.button-normal				{ background: lighten($section-7-color, 45%); color: $section-7-color; }
+.section-7 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-7 a.button-normal:hover,
-.section-7 a.button-normal:active		{ background: darken(lighten($section-7-color, 45%), 10%); }
-.section-7 a.button-normal #icon-arrow	{ stroke: rgba($section-7-color, .3); }
+.section-7 a.button-normal:active				{ border: solid 1px $section-7-color; color: $section-7-color; }
+.section-7 a.button-normal:hover  #icon-arrow,
+.section-7 a.button-normal:active #icon-arrow	{ stroke: $section-7-color; }
 
-/* Section-8 */
-.section-8 a.button-important			{ background: $section-8-color; }
+/* section-8 */
+.section-8 a.button-important					{ background: $section-8-color; }
 .section-8 a.button-important:hover,
-.section-8 a.button-important:active	{ background: darken($section-8-color, 10%); }
+.section-8 a.button-important:active			{ background: darken($section-8-color, 10%); }
 
-.section-8 a.button-normal				{ background: lighten($section-8-color, 45%); color: $section-8-color; }
+.section-8 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-8 a.button-normal:hover,
-.section-8 a.button-normal:active		{ background: darken(lighten($section-8-color, 45%), 10%); }
-.section-8 a.button-normal #icon-arrow	{ stroke: rgba($section-8-color, .3); }
+.section-8 a.button-normal:active				{ border: solid 1px $section-8-color; color: $section-8-color; }
+.section-8 a.button-normal:hover  #icon-arrow,
+.section-8 a.button-normal:active #icon-arrow	{ stroke: $section-8-color; }
 
-/* Section-9 */
-.section-9 a.button-important			{ background: $section-9-color; }
+/* section-9 */
+.section-9 a.button-important					{ background: $section-9-color; }
 .section-9 a.button-important:hover,
-.section-9 a.button-important:active	{ background: darken($section-9-color, 10%); }
+.section-9 a.button-important:active			{ background: darken($section-9-color, 10%); }
 
-.section-9 a.button-normal				{ background: lighten($section-9-color, 50%); color: $section-9-color; }
+.section-9 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-9 a.button-normal:hover,
-.section-9 a.button-normal:active		{ background: darken(lighten($section-9-color, 50%), 10%); }
-.section-9 a.button-normal #icon-arrow	{ stroke: rgba($section-9-color, .3); }
+.section-9 a.button-normal:active				{ border: solid 1px $section-9-color; color: $section-9-color; }
+.section-9 a.button-normal:hover  #icon-arrow,
+.section-9 a.button-normal:active #icon-arrow	{ stroke: $section-9-color; }
 
-/* Section-10 */
-.section-10 a.button-important			{ background: $section-10-color; }
+/* section-10 */
+.section-10 a.button-important					{ background: $section-10-color; }
 .section-10 a.button-important:hover,
-.section-10 a.button-important:active	{ background: darken($section-10-color, 10%); }
+.section-10 a.button-important:active			{ background: darken($section-10-color, 10%); }
 
-.section-10 a.button-normal				{ background: lighten($section-10-color, 55%); color: $section-10-color; }
+.section-10 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-10 a.button-normal:hover,
-.section-10 a.button-normal:active		{ background: darken(lighten($section-10-color, 55%), 10%); }
-.section-10 a.button-normal #icon-arrow	{ stroke: rgba($section-10-color, .3); }
+.section-10 a.button-normal:active				{ border: solid 1px $section-10-color; color: $section-10-color; }
+.section-10 a.button-normal:hover  #icon-arrow,
+.section-10 a.button-normal:active #icon-arrow	{ stroke: $section-10-color; }
 
-/* Section-11 */
-.section-11 a.button-important			{ background: $section-11-color; }
+/* section-11 */
+.section-11 a.button-important					{ background: $section-11-color; }
 .section-11 a.button-important:hover,
-.section-11 a.button-important:active	{ background: darken($section-11-color, 10%); }
+.section-11 a.button-important:active			{ background: darken($section-11-color, 10%); }
 
-.section-11 a.button-normal				{ background: lighten($section-11-color, 60%); color: $section-11-color; }
+.section-11 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-11 a.button-normal:hover,
-.section-11 a.button-normal:active		{ background: darken(lighten($section-11-color, 60%), 10%); }
-.section-11 a.button-normal #icon-arrow	{ stroke: rgba($section-11-color, .3); }
+.section-11 a.button-normal:active				{ border: solid 1px $section-11-color; color: $section-11-color; }
+.section-11 a.button-normal:hover  #icon-arrow,
+.section-11 a.button-normal:active #icon-arrow	{ stroke: $section-11-color; }
 
-/* Section-12 */
-.section-12 a.button-important			{ background: $section-12-color; }
+/* section-12 */
+.section-12 a.button-important					{ background: $section-12-color; }
 .section-12 a.button-important:hover,
-.section-12 a.button-important:active	{ background: darken($section-12-color, 10%); }
+.section-12 a.button-important:active			{ background: darken($section-12-color, 10%); }
 
-.section-12 a.button-normal				{ background: lighten($section-12-color, 60%); color: $section-12-color; }
+.section-12 a.button-normal						{ background: none; border: solid 1px $button-normal-link; color: $button-normal-link; }
 .section-12 a.button-normal:hover,
-.section-12 a.button-normal:active		{ background: darken(lighten($section-12-color, 60%), 10%); }
-.section-12 a.button-normal #icon-arrow	{ stroke: rgba($section-12-color, .3); }
+.section-12 a.button-normal:active				{ border: solid 1px $section-12-color; color: $section-12-color; }
+.section-12 a.button-normal:hover  #icon-arrow,
+.section-12 a.button-normal:active #icon-arrow	{ stroke: $section-12-color; }
