@@ -1,0 +1,30 @@
+wkhtmltoimage --width 1400 --height 1400 http://www.google.com google.png
+wkhtmltoimage --width 1400 --height 1400 http://www.outlook.com outlook.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.flipboard.com flipboard.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.flickr.com flickr.png
+wkhtmltoimage --width 1400 --height 1400 http://www.instagram.com instagram.png
+wkhtmltoimage --width 1400 --height 1400 http://www.picasa.com picasa.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.behance.com behance.png
+wkhtmltoimage --width 1400 --height 1400 http://www.dribbble.com dribbble.png
+wkhtmltoimage --width 1400 --height 1400 http://www.dunked.com dunked.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.about.me aboutme.png
+wkhtmltoimage --width 1400 --height 1400 http://www.flavorme.com flavorme.png
+wkhtmltoimage --width 1400 --height 1400 http://www.vizify.com vizify.png
+wkhtmltoimage --width 1400 --height 1400 http://www.zerply.com zerply.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.alpha.com alpha.png
+wkhtmltoimage --width 1400 --height 1400 http://www.discus.com discus.png
+wkhtmltoimage --width 1400 --height 1400 http://www.facebook.com facebook.png
+wkhtmltoimage --width 1400 --height 1400 http://www.linkedin.com linkedin.png
+wkhtmltoimage --width 1400 --height 1400 http://www.twitter.com twitter.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.invision.com invision.png
+wkhtmltoimage --width 1400 --height 1400 http://www.prevue.com prevue.png
+
+wkhtmltoimage --width 1400 --height 1400 http://www.medium.com medium.png
+wkhtmltoimage --width 1400 --height 1400 http://www.scriptogram.com scriptogram.png
+wkhtmltoimage --width 1400 --height 1400 http://www.tumblr.com tumblr.png
