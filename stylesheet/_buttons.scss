@@ -1,0 +1,6 @@
+/* Buttons */
+a.button							{ text-decoration: none; font-size: 1.25rem; line-height: 3rem; height: 3rem; width: 100%; padding: 0 .625rem; margin-bottom: $column-gap; position: relative; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+a.button #icon-arrow				{ fill: none; stroke-width: $icon-stroke; width: 2.5rem; height: 2.5rem; position: absolute; top: 0; right: 0; }
+a.button-important #icon-arrow		{ stroke: rgba($button-link, 1); }
+a.button-normal #icon-arrow			{ stroke: rgba($button-normal-link, 1); }

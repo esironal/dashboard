@@ -1,25 +1,25 @@
 /* Base color style */
-body							{ background: $background; }
+body							{ background-color: $background; }
 
 h1								{ color: $color-highlight; }
 
-nav								{ background: $menu-color; }
-nav a							{ background: rgba($menu-link-color, .08); color: $menu-link-color; }
+nav								{ background-color: $menu-color; }
+nav a							{ background-color: rgba($menu-link-color, .08); color: $menu-link-color; }
 nav .menu-icons					{ fill: none; stroke-width: $icon-stroke; stroke: $menu-link-color; }
-nav a:hover						{ background: rgba($menu-link-color, .04); color: #fff; }
+nav a:hover						{ background-color: rgba($menu-link-color, .04); color: #fff; }
 nav a:hover .menu-icons			{ stroke: #fff; }
 
 section							{ border-top: solid .0625rem rgba($button-normal-color, 0.5); }
 
 a.top:link,
-a.top:visited					{ background: rgba($button-normal-color, 0.5); color: $top-color; }
+a.top:visited					{ background-color: rgba($button-normal-color, 0.5); color: $top-color; }
 a.top:hover,
-a.top:active					{ background: $top-color; color: #fff; }
+a.top:active					{ background-color: $top-color; color: #fff; }
 
-a.button						{ background: $button-important-color; color: $button-link; }
+a.button						{ background-color: $button-important-color; color: $button-link; }
 a.button:hover,
-a.button:active					{ background: darken($button-important-color, 10%); }
+a.button:active					{ background-color: darken($button-important-color, 10%); }
 
-a.button-normal					{ background: $button-normal-color; color: $button-normal-link; }
+a.button-normal					{ background-color: $button-normal-color; color: $button-normal-link; }
 a.button-normal:hover,
-a.button-normal:active			{ background: darken($button-normal-color, 10%); }
+a.button-normal:active			{ background-color: darken($button-normal-color, 10%); }

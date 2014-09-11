@@ -1,4 +1,8 @@
+@import '_buttons';
+
 /* Navigation */
+nav												{ padding: 0; }
+
 nav a											{ background: none; border: 1px solid rgba($menu-link-color, .1); }
 nav a:hover										{ background: none; }
 

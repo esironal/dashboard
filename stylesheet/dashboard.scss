@@ -3,12 +3,14 @@
 
 /* Import */
 @import '_variables';
-/* Colors */
+/* Colors - dont remove _color-base */
 @import '_colors-base';
+
+/* Change to the color theme you want */
 // @import '_colors-regular';
 // @import '_colors-grey';
-@import '_colors-alternate';
-@import '_images';
+// @import '_colors-stroke';
+@import '_colors-flat';
 
 /* Base type */
 body								{ font-family: HelveticaNeue-Light, Helvetica, sans-serif; }
@@ -28,7 +30,7 @@ nav a								{ -webkit-transition: all 0.2s ease-out; -moz-transition: all 0.2s 
 /* Menu */
 nav									{ margin: 0; padding: 1.5rem; width: 100%; height: auto; box-sizing: border-box; float: left; clear: both; }
 nav ul								{ width: 100%; margin: 0; padding: 0; box-sizing: border-box; float: left; clear: both; } 
-nav li								{ list-style-type: none; margin-bottom: 2%; width: 49%; margin-left: 2%; float: left; box-sizing: border-box; }
+nav li								{ list-style-type: none; margin-bottom: 2%; width: 49%; float: left; box-sizing: border-box; }
 nav li:nth-child(2n+1)				{ margin-left: 0; }
 
 nav a								{ line-height: 3rem; text-decoration: none; display: block; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; }
@@ -41,20 +43,10 @@ section h2							{ margin-top: 0; }
 
 /* Button grid */
 .grid								{ padding: 0; margin: 0; width: 100%; float: left; clear: both; }
-.grid li							{ list-style-type: none; width: 100%; float: left; box-sizing: border-box; margin-left: 2%; }
-
-span.thumbnail						{ background-image: url(/images/sites/behance.png); background-color: #ccc; background-size: 100%; width: 100%; height: 12rem; display: block; }
+.grid li							{ list-style-type: none; width: 100%; float: left; box-sizing: border-box; /*margin-left: 2%;*/ }
 
 a.top								{ font-family: 'Montserrat', sans-serif; text-transform: uppercase; font-weight: 400; font-size: 80%; text-decoration: none; padding: .375rem; position: absolute; top: 0; right: 0; }
 .icons								{ width: 0; height: 0; display: none; }
-
-/* Buttons */
-a.button							{ text-decoration: none; font-size: 1.25rem; line-height: 3rem; /*height: 3rem;*/ width: 100%; /*padding: 0 .625rem;*/ margin-bottom: $column-gap; position: relative; -webkit-border-radius: $button-radius; -moz-border-radius: $button-radius; border-radius: $button-radius; display: block; -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
-
-a.button #icon-arrow				{ fill: none; stroke-width: $icon-stroke; width: 2.5rem; height: 2.5rem; position: absolute; top: 0; right: 0; }
-a.button-important #icon-arrow		{ stroke: rgba($button-link, 1); }
-a.button-normal #icon-arrow			{ stroke: rgba($button-normal-link, 1); }
-
 
 /* Menu */
 @media only screen and (min-width: 1000px)	{
@@ -66,6 +58,8 @@ a.button-normal #icon-arrow			{ stroke: rgba($button-normal-link, 1); }
 
 /* Grid */
 @media only screen and (min-width: 480px)	{
+	.grid li								{ width: 49%; margin-left: 2%; }
+	.grid li:nth-child(2n+1)				{ margin-left: 0; }
 	nav li									{ width: 32%; margin-left: 2%; }
 	nav li:nth-child(2n+1)					{ margin-left: 2%; }
 	nav li:nth-child(3n+1)					{ margin-left: 0; }

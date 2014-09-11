@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>dev</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="dev" sketch:type="MSArtboardGroup" stroke="#000000" stroke-width="2">
+            <path d="M5,13.0528302 L42.7688889,13.0528302 L42.7688889,39.9849057 C42.7688889,41.3562264 41.6711111,42.4739623 40.3251852,42.4739623 L7.4437037,42.4739623 C6.09777778,42.4739623 5,41.3562264 5,39.9849057 L5,13.0528302 L5,13.0528302 Z M5,10.789434 L5,6.48981132 C5,5.11849057 6.09777778,4 7.4437037,4 L40.3251852,4 C41.6711111,4 42.7688889,5.11849057 42.7688889,6.48981132 L42.7688889,10.789434 M37.2088889,8.52679245 L39.4303704,8.52679245 M28.3222222,8.52679245 L30.5437037,8.52679245 M32.7651852,8.52679245 L34.9866667,8.52679245" id="Dev" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
